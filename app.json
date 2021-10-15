@@ -1,7 +1,7 @@
 {
     "formation": {
-      "web": {
-        "size": "free"
-      }
+        "web": {
+            "size": "free"
+        }
     }
-  }
+}
