@@ -1,371 +1,372 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Resume || Sadhvik Chirunomula</title>
-
-    <!--ICON-->
-    <link rel="shortcut icon" href="images/icon.ico">
-
-    <!--META TAGS-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="author" content="Mahesh">
-    <meta name="description" content="A digital resume">
-    <meta name="keywords" content="resume, my resume, mahesh bharadwaj, CV, digital resume, mahesh resume, cool resume, digital cv">
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="MyResume || Mahesh Bharadwaj" />
-
-    <!--PLUGIN-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6121954079666293" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-    <!--EXTERNAL CSS-->
-    <link rel="stylesheet" href="profile.css">
-
-    <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
-
-    <!--FONT AWESOME-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadhvik Chirunomula - Lead Product Engineer</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 0;
+        }
+        header h2 {
+            font-size: 1.5em;
+            color: #34495e;
+            font-weight: 400;
+            margin-top: 5px;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            font-size: 0.95em;
+        }
+        .contact-info a {
+            text-decoration: none;
+            color: #3498db;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .contact-info a:hover {
+            background-color: #ecf0f1;
+            text-decoration: underline;
+        }
+        .contact-info span {
+            padding: 5px 10px;
+            color: #555;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h3 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+        .section h4 {
+            font-size: 1.3em;
+            color: #34495e;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        .section h5 {
+            font-size: 1.1em;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+            font-weight: 400;
+            font-style: italic;
+        }
+        .section p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .section > ul > li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+        }
+        .section > ul > li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #3498db;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .job {
+            margin-bottom: 25px;
+            padding-left: 15px;
+            border-left: 3px solid #ecf0f1;
+        }
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .tech-category h6 {
+            font-size: 1.1em;
+            color: #34495e;
+            margin-bottom: 10px;
+            margin-top: 0;
+            font-weight: 600;
+        }
+        .tech-category ul {
+            padding-left: 15px;
+            list-style-type: disc;
+        }
+         .tech-category ul li {
+            margin-bottom: 5px;
+            color: #555;
+         }
+        .education-item {
+            margin-bottom: 15px;
+        }
+        .interests-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .interests-list li {
+            background-color: #ecf0f1;
+            color: #555;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+        /* Remove bullet point styling for interests */
+        .interests-list li::before {
+            content: none;
+        }
+    </style>
 </head>
-
 <body>
 
-
-    <!--HEADER-->
-    <header>
-        <nav class="nav" id="nav">
-            <a href="#">HOME</a>
-            <a href="#">ABOUT ME</a>
-            <a href="#Skills">SKILLS</a>
-            <!--<a href="#MyWorks">MY WORKS</a>-->
-            <a href="#ContactMe">CONTACT ME</a>
-            <!--<a href="#" class="active">DOWNLOAD CV <i class="fa fa-download"></i></a>-->
-            <a class="icon" id="icon" onclick="opennav()"><i class="fa fa-bars"></i></a>
-        </nav>
-    </header>
-
-
-
-    <!--CONTAINER-->
     <div class="container">
-        <table>
-            <tr>
-                <td>
-                    <div class="author_content">
-                        <h1 class="title">Sadhvik Chirunomula</h1>
-                        <p>Hello there! Before talking about qualifications and professional abilities, I would like to introduce myself.</p>
-                        <p>I am Sadhvik Chirunomula, an Energetic individual with the ability to implement a Full Stack Application and bringing working knowledge on Data Engineering and Devops. I am from I am from India. Taking Devops as a profession not
-                            only fulfils my pocket but also my heart because it has been my passion.
-                        </p>
-                        <p>I believe that people should do things in which they are good at or in which their heart lays.
-                        </p>
-                        <p>My father taught how to live & learn. He told me that, life without learning is like a desert and life with knowledge is like a park. I believe in that, and what I aim for is to use hundred percent of my brain.
-                        </p>
-                        <p>I strongly believe that someday every choice I take will cause nexus event. My mind works in while true loop which never ends with millions of ifelse statements.</p>
-
-                    </div>
-                    <div class="author_name"></div>
-                </td>
-                <td>
-                    <section class="works">
-                        <div>
-                            <em>Qualification:</em>
-                            <ul>
-                                <li><b>MVSR Engineering College</b> <b>-</b> Bachelor Of Engineering (Electronics and Communcation Engineering) <b>-</b> 80%</li>
-                            </ul>
-                            <ul>
-                                <li><b>Sri Chaitanya Junior College</b> <b>-</b> Intermediate (MPC) <b>-</b> 92.9%</li>
-                            </ul>
-                            <ul>
-                                <li><b>The Nalgonda Public School</b> <b>-</b> CBSE <b>-</b> 9.2CGPA</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <em>Intrests & Hobbies:</em>
-                            <ul>
-                                <li><b>-</b> National Chess, Carom Player</li>
-                            </ul>
-                            <ul>
-                                <li><b>-</b> Mathophile</li>
-                            </ul>
-                            <ul>
-                                <li><b>-</b> Extrovert</li>
-                            </ul>
-                            <ul>
-                                <li><b>-</b> Gymnast </li>
-                            </ul>
-                            <ul>
-                                <li><b>-</b> Gadget Freak </li>
-                            </ul>
-                            <ul>
-                                <li><b>-</b> Play with UCMAS</li>
-                            </ul>
-                            <ul>
-                                <li><b>-</b> Fan of Marvel, DC, One Piece, Naruto, Harry Potter.</li>
-                            </ul>
-
-                        </div>
-                        <div>
-                        </div>
-                    </section>
-                    <div class="social_icons">
-                        <a href="Sadhvik Resume.pdf" title="Resume" target="_blank"><i class="fa fa-book"></i></a>
-                        <a href="https://stackoverflow.com/users/12455245/sadhvik-chirunomula" title="Stackoverflow" target="_blank"><i class="fa fa-stack-overflow"></i></a>
-                        <a href="https://www.linkedin.com/in/sadhvik-chirunomula-080064170/" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        <a href="emailto:sadhu1998@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
-                    </div>
-                </td>
-            </tr>
-
-
-
-
-            <!--MY SKILLS-->
-            <tr id="Skills">
-                <td>
-                    <div class="author_content_skills">
-                        <h1 class="title">My Skills</h1>
-                        <p>My education background and my passion towards coding allowed me to thrive in this career</p>
-                        <p>I aquired a quite good knowledge in <em>Java, Terraform, String Templates, Postgresql, Dart,
-                                HTML</em> and intermediate level in
-                            <em>MySQL, OracleDB</em> and basic level in using <em>Hadoop, Hive, Impala, Spark</em> and have working experience on <em>Linux</em> platform
-                        </p>
-                        <p>I always love to learn more things, and prefer to work in a team.</p>
-                        <p>I have been working on GCP, Azure Infrastucture Automation Process since 2 years and this lead me to deep dive into Cloud Platforms and Operations.</p>
-                        <p>In my experience, I have worked on designing, developing and deploying few applications (from scratch) and was able to generate business value out of almost all my thoughts.</p>
-                        <p>Recieved multiple commends from the clients that I worked for, and most of them are due to my ideas and implementaions which decreased a lot of unneccary billing in Cloud Platforms (GCP, Azure, Atlas Mongo)</p>
-                        <p>Strong knowledge on setting up Kubernetes (GKE), network management, implementing logging, Docker and designing backend schemas </p>
-                        <strong>Thank You.</strong>
-                    </div>
-                </td>
-                <td>
-                    <section>
-                        <em>Devops Engineer</em>
-                        <div class="languages">
-                            <label for="lan1"><b>Programming Languages</b></label>
-                            <br>
-                            <label for="lan1">Java</label>
-                            <div id="lan1" class="progress">
-                                <div class="progress-value progress9"></div>
-                            </div>
-                            <label for="lan2">Dart</label>
-                            <div id="lan2" class="progress">
-                                <div class="progress-value progress2"></div>
-                            </div>
-                            <label for="lan3">Terraform</label>
-                            <div id="lan3" class="progress">
-                                <div class="progress-value progress9"></div>
-                            </div>
-                            <label for="lan4">HTML</label>
-                            <div id="lan4" class="progress">
-                                <div class="progress-value progress6"></div>
-                            </div>
-                            <label for="lan5">String Templates</label>
-                            <div id="lan5" class="progress">
-                                <div class="progress-value progress9"></div>
-                            </div>
-                            <br>
-                            <br>
-
-                            <label for="lan6"><b>Frameworks</b></label>
-                            <br>
-                            <label for="lan6">Spring Boot</label>
-                            <div id="lan6" class="progress">
-                                <div class="progress-value progress4"></div>
-                            </div>
-                            <label for="lan7">Kubernetes</label>
-                            <div id="lan7" class="progress">
-                                <div class="progress-value progress"></div>
-                            </div>
-                            <label for="lan7">Docker</label>
-                            <div id="lan7" class="progress">
-                                <div class="progress-value progress"></div>
-                            </div>
-                            <label for="lan8">Flutter</label>
-                            <div id="lan8" class="progress">
-                                <div class="progress-value progress8"></div>
-                            </div>
-                            <br>
-                            <br>
-
-                            <label for="lan6"><b>Monitoring Tools</b< /label>
-                                    <br>
-                                    <label for="lan9">Grafana</label>
-                            <div id="lan9" class="progress">
-                                <div class="progress-value progress4"></div>
-                            </div>
-                            <label for="lan10">Stack Driver</label>
-                            <div id="lan10" class="progress">
-                                <div class="progress-value progress9"></div>
-                            </div>
-                            <br>
-                            <br>
-
-                            <label for="lan6"><b>Databases</b< /label>
-                                            <br>
-                                            <label for="lan6">Postgres</label>
-                            <div id="lan6" class="progress">
-                                <div class="progress-value progress9"></div>
-                            </div>
-                            <label for="lan7">MySQL</label>
-                            <div id="lan7" class="progress">
-                                <div class="progress-value progress6"></div>
-                            </div>
-                            <label for="lan8">SqlServer</label>
-                            <div id="lan8" class="progress">
-                                <div class="progress-value progress6"></div>
-                            </div>
-                            <label for="lan8">MongoDB</label>
-                            <div id="lan8" class="progress">
-                                <div class="progress-value progress9"></div>
-                            </div>
-                            <label for="lan8">OracleDB</label>
-                            <div id="lan8" class="progress">
-                                <div class="progress-value progress6"></div>
-                            </div>
-                            <br>
-                            <br>
-
-                            <label for="lan6"><b>Data Streaming</b></label>
-                            <br>
-                            <label for="lan6">Kafka</label>
-                            <div id="lan6" class="progress">
-                                <div class="progress-value progress9"></div>
-                            </div>
-                            <label for="lan7">Streamsets</label>
-                            <div id="lan7" class="progress">
-                                <div class="progress-value progress9"></div>
-                            </div>
-                            <label for="lan8">Confluent Stack</label>
-                            <div id="lan8" class="progress">
-                                <div class="progress-value progress"></div>
-                            </div>
-                            <br>
-                            <br>
-
-                            <label for="lan6"><b>Cloud</b></label>
-                            <br>
-                            <label for="lan6">GCP</label>
-                            <div id="lan6" class="progress">
-                                <div class="progress-value progress9"></div>
-                            </div>
-                            <label for="lan7">Azure</label>
-                            <div id="lan7" class="progress">
-                                <div class="progress-value progress"></div>
-                            </div>
-                            <br>
-                            <br>
-
-                            <label for="lan6"><b>Build Tools</b></label>
-                            <br>
-                            <label for="lan6">Azure Devops</label>
-                            <div id="lan6" class="progress">
-                                <div class="progress-value progress9"></div>
-                            </div>
-                            <label for="lan7">Git</label>
-                            <div id="lan7" class="progress">
-                                <div class="progress-value progress9"></div>
-                            </div>
-                            <label for="lan6">Terraform</label>
-                            <div id="lan6" class="progress">
-                                <div class="progress-value progress9"></div>
-                            </div>
-                            <label for="lan7">Maven</label>
-                            <div id="lan7" class="progress">
-                                <div class="progress-value progress8"></div>
-                            </div>
-                            <br>
-                            <br>
-
-                            <label for="lan6"><b>Operating Systems</b></label>
-                            <br>
-                            <label for="lan6">Linux</label>
-                            <div id="lan6" class="progress">
-                                <div class="progress-value progress9"></div>
-                            </div>
-                            <label for="lan7">windows</label>
-                            <div id="lan7" class="progress">
-                                <div class="progress-value progress9"></div>
-                            </div>
-                            <br>
-                            <br>
-
-                            <label for="lan6"><b>Conversational Languages</b></label>
-                            <br>
-                            <label for="lan6">English</label>
-                            <div id="lan6" class="progress">
-                                <div class="progress-value progress6"></div>
-                            </div>
-                            <label for="lan7">Hindi</label>
-                            <div id="lan7" class="progress">
-                                <div class="progress-value progress6"></div>
-                            </div>
-                            <label for="lan7">Telugu</label>
-                            <div id="lan7" class="progress">
-                                <div class="progress-value progress6"></div>
-                            </div>
-                            <br>
-                            <br>
-                        </div>
-
-    </div>
-    </section>
-    </td>
-    </tr>
-
-
-
-
-    <!--CONTACT FORM-->
-    <tr id="ContactMe">
-        <td>
-            <div class="author_content">
-                <h1 class="title">Feel free to reach out</h1>
-                <p>I always love to hear from you. If I can be of assistance, please do not hesitate to contact me. You guys can reach me through my email address as a primary option or through filling the contact form. Drop me a line if I can do anything
-                    else for you.</p>
+        <header>
+            <h1>Sadhvik Chirunomula</h1>
+            <h2>Lead Product Engineer at Modak Analytics</h2>
+            <div class="contact-info">
+                <span><a href="mailto:sadhu1998@gmail.com">sadhu1998@gmail.com</a></span>
+                <span>+91 9160230298</span>
+                <span>Hyderabad, TG, India 500032</span>
             </div>
-            <footer>
-                © Sadhvik Chirunomula <b>-</b> (1998 <b>-</b> Present)
-            </footer>
-        </td>
-        <td>
-            <section class="contact">
-                <form id="contactform">
-                    <label for="name">Full name*</label>
-                    <input type="text" name="name" id="name" placeholder="Your name" maxlength="50" required="" />
-                    <label for="name">Email address*</label>
-                    <input type="email" name="email" id="email" placeholder="Email address" maxlength="100" required="" />
-                    <label for="message">Message*</label>
-                    <textarea name="message" id="message" placeholder="Your message here..." maxlength="250" required=""></textarea>
-                </form>
-                <button type="submit" onclick="validate()">SUBMIT</button>
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/sadhvik-chirunomula-080064170/" target="_blank">LinkedIn</a>
+                <a href="https://sadhvikchirunomula.github.io/" target="_blank">GitHub Portfolio</a>
+                <a href="https://stackoverflow.com/users/12455245/sadhvik-chirunomula" target="_blank">Stack Overflow</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="section">
+                <h3>Professional Summary</h3>
+                <p>
+                    Dynamic Lead Product Engineer at Modak Analytics with expertise in cloud-native solutions and CI/CD automation.
+                    Proven track record in architecting scalable data platforms and driving cross-functional collaboration.
+                    Skilled in Terraform and passionate about delivering enterprise-grade products that align with customer needs, enhancing system resilience and operational efficiency.
+                </p>
             </section>
-        </td>
-    </tr>
-    </table>
+
+            <section class="section">
+                <h3>Technologies Known</h3>
+                <div class="tech-grid">
+                    <div class="tech-category">
+                        <h6>Programming & Scripting</h6>
+                        <ul>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>Dart</li>
+                            <li>Bash shell scripting</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h6>Web & App Frameworks</h6>
+                        <ul>
+                            <li>Spring (Java)</li>
+                            <li>Flask (Python)</li>
+                            <li>Flutter (Dart)</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h6>IaC & Containerization</h6>
+                        <ul>
+                            <li>Terraform</li>
+                            <li>Docker</li>
+                            <li>Kubernetes</li>
+                            <li>Vagrant</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h6>Build & Dependency</h6>
+                        <ul>
+                            <li>Maven</li>
+                            <li>SBT</li>
+                            <li>Pip</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h6>Data Integration & Messaging</h6>
+                        <ul>
+                            <li>StreamSets</li>
+                            <li>Apache Kafka</li>
+                            <li>Confluent Kafka</li>
+                            <li>RabbitMQ</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h6>Reverse Proxies & Service Mesh</h6>
+                        <ul>
+                            <li>Nginx</li>
+                            <li>Traefik</li>
+                            <li>Istio</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h6>CI/CD & Version Control</h6>
+                        <ul>
+                            <li>Git (GitHub, GitHub Actions)</li>
+                            <li>Azure DevOps</li>
+                            <li>Ansible</li>
+                            <li>Puppet, Chef, Salt</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h6>Monitoring & Observability</h6>
+                        <ul>
+                            <li>Grafana</li>
+                            <li>Telegraf, Prometheus</li>
+                            <li>Splunk</li>
+                            <li>Dynatrace</li>
+                            <li>Elastic Stack (EFK/ELK)</li>
+                            <li>Cloud Monitoring</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h6>Databases</h6>
+                        <ul>
+                            <li>PostgreSQL</li>
+                            <li>MySQL</li>
+                            <li>Oracle DB</li>
+                            <li>MongoDB (Atlas)</li>
+                            <li>InfluxDB</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h6>Cloud Platforms</h6>
+                        <ul>
+                            <li>Google Cloud Platform (GCP)</li>
+                            <li>Microsoft Azure</li>
+                            <li>Amazon Web Services (AWS)</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h6>Cloud Marketplace</h6>
+                        <ul>
+                            <li>GCP, Azure, and AWS</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h6>Operating Systems</h6>
+                        <ul>
+                            <li>Linux</li>
+                            <li>Windows</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h3>Experience</h3>
+                
+                <div class="job">
+                    <h4>Lead Product Engineer</h4>
+                    <h5>Modak Analytics | Hyderabad (09/2024–Current)</h5>
+                    <ul>
+                        <li>Architected a multi-tenant, cloud-native analytics platform supporting real-time distributed processing for over 10 enterprise clients, enabling sub-second insight delivery.</li>
+                        <li>Led 6+ cross-functional teams (Product, QA, Engineering, DevOps, Sales Engineering) and ensured 100% on-time feature releases across multiple product cycles.</li>
+                        <li>Reduced deployment time by 40% through automation of CI/CD pipelines, real-time observability, and integrated tooling (CLI, REST APIS, UI).</li>
+                        <li>Represented technical roadmap in 15+ customer-facing sessions, executive briefings, and industry panels, influencing roadmap alignment and stakeholder engagement.</li>
+                        <li>Delivered SaaS integrations across AWS, Azure, and GCP marketplaces, reducing onboarding time by 30% and enabling automated licensing and billing.</li>
+                        <li>Provisioned auto-scaling Apache Spark clusters using Kubernetes, Docker, and Terraform (IaC), reducing environment setup time by 75% and cutting infrastructure costs by 50%.</li>
+                        <li>Engineered secure and scalable landing zones on Google Cloud Platform (GCP) and Microsoft Azure, aligned with enterprise architecture standards to support zero-touch provisioning across 20+ projects.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h4>Senior DevOps Engineer</h4>
+                    <h5>Modak Analytics | Hyderabad (03/2022–08/2024)</h5>
+                    </div>
+
+                <div class="job">
+                    <h4>DevOps Engineer</h4>
+                    <h5>Modak Analytics | Hyderabad (04/2020–02/2022)</h5>
+                    <ul>
+                        <li>Automated infrastructure provisioning using Terraform and integrated CI/CD pipelines via GitHub Actions and Azure DevOps, reducing deployment errors by 70% and cutting release times by 50%.</li>
+                        <li>Designed cloud cost governance frameworks, including automated billing dashboards, tagging enforcement, and budget alerting, leading to a 25-35% reduction in monthly cloud spend.</li>
+                        <li>Developed real-time observability architecture using Grafana, Prometheus, ELK Stack, Splunk, and Google Stackdriver, enabling SRE best practices and reducing MTTR by 40%.</li>
+                        <li>Delivered marketplace-ready SaaS integrations on AWS Marketplace, Azure Marketplace, and Google Cloud Marketplace, supporting automated licensing, metering, and billing.</li>
+                        <li>Automated deployment of IBM StreamSets and Confluent Kafka pipelines across Google Cloud and Azure, increasing deployment consistency and reducing failure rates by 60%.</li>
+                        <li>Built hybrid cloud deployment frameworks using Terraform, Azure DevOps, and Ansible, enabling scalable rollout across 20+ tenant environments.</li>
+                        <li>Deployed containerized microservices on Kubernetes clusters, doubling service availability and supporting multi-region failover with zero downtime deployments.</li>
+                        <li>Enabled full-stack performance observability through Splunk and Dynatrace, achieving average bottleneck resolution time under 2 hours and improving uptime.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h4>Data Engineer</h4>
+                    <h5>Modak Analytics | Hyderabad (09/2019–03/2020)</h5>
+                    <ul>
+                        <li>Developed a custom Java-based ETL platform using StreamSets and PostgreSQL, designed to handle 1TB+ of daily data across multi-cloud environments.</li>
+                        <li>Engineered flexible pipeline execution logic supporting diverse data sources and sinks including Kafka, GCS, Amazon S3, Azure Data Lake Storage (ADLS), Oracle, and MongoDB, improving reliability and reducing integration effort.</li>
+                        <li>Automated end-to-end PaaS deployment lifecycle across AWS, Azure, and GCP, improving provisioning speed by 60% and eliminating manual configuration.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h3>Education</h3>
+                <div class="education-item">
+                    <h4>Osmania University | Hyderabad</h4>
+                    <p>Hyderabad in Electronics And Communication (Graduated: 06/2019)</p>
+                </div>
+                <div class="education-item">
+                    <h4>Sri Chaitanya Junior College | Hyderabad</h4>
+                    <p>Intermediate in Hyderabad (Graduated: 05/2015)</p>
+                </div>
+                <div class="education-item">
+                    <h4>The Nalgonda Public School (C.B.S.E) | Nalgonda</h4>
+                    <p>Class X (Graduated: 06/2013) - GPA: 9.2</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h3>Interests</h3>
+                <ul class="interests-list">
+                    <li>National Chess & Carom Player</li>
+                    <li>Violet Belt in Karate</li>
+                    <li>Gymnast</li>
+                    <li>UCMAS Graduate</li>
+                    <li>Singer & Beginner Flutist</li>
+                    <li>Anime Fan (Naruto, One Piece)</li>
+                    <li>Marvel & DC Enthusiast</li>
+                    <li>Passionate Teacher & Mentor</li>
+                </ul>
+            </section>
+        </main>
     </div>
 
-
-
-    <div id="snackbar"></div>
-    <div id="snackbar2"></div>
-
-
-    <!--JAVASCRIPT-->
-    <script type="text/javascript" src="profile.js"></script>
-    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6121954079666293"
-     crossorigin="anonymous"></script>
 </body>
-
 </html>
