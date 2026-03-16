@@ -156,12 +156,12 @@
     // ===================== TYPEWRITER EFFECT =====================
     const typedTextEl = document.getElementById('typedText');
     const phrases = [
-        'Lead Product Engineer | DevOps Architect | Cloud Specialist',
-        'scalable cloud-native platforms.',
-        'automated CI/CD pipelines.',
-        'enterprise-grade data systems.',
-        'resilient, multi-cloud infrastructure.',
-        'observability & monitoring solutions.',
+        'Senior DevOps & Platform Engineer | Cloud-Native Infrastructure',
+        'multi-tenant SaaS data platforms.',
+        'Terraform IaC & Kubernetes orchestration.',
+        'Apache Spark infrastructure at scale.',
+        'CI/CD automation & GitOps pipelines.',
+        'production observability & cost optimization.',
     ];
     let phraseIndex = 0, charIndex = 0, isDeleting = false, typeSpeed = 50;
 
@@ -436,7 +436,7 @@
                 } else if (command === 'help') {
                     response = 'Available: whoami, cat contact.json, help, send-message, clear, skills, location';
                 } else if (command === 'whoami') {
-                    response = 'Lead Product Engineer & DevOps Architect | 6.5+ years';
+                    response = 'Senior DevOps & Platform Engineer | 6.5+ years | Leading 30 engineers';
                 } else if (command === 'clear') {
                     terminalBody.querySelectorAll('.terminal-line:not(.terminal-input-line), .terminal-output').forEach(el => el.remove());
                     terminalInput.value = '';
@@ -511,15 +511,18 @@
     if (mobileGridEl) {
         const fullTechData = [
             { h: '☁️ Cloud Platforms', tags: [{ n: 'AWS', i: 'amazonwebservices', c: '#f59e0b', e: '🔶' }, { n: 'Azure', i: 'microsoftazure', c: '#3B82F6', e: '🔷' }, { n: 'GCP', i: 'googlecloud', c: '#10b981', e: '🟢' }] },
-            { h: '🏗️ Infrastructure & IaC', tags: [{ n: 'Terraform', i: 'terraform', c: '#8B5CF6', e: '🟪' }, { n: 'Kubernetes', i: 'kubernetes', c: '#3B82F6', e: '☸️' }, { n: 'Docker', i: 'docker', c: '#06b6d4', e: '🐳' }, { n: 'Vagrant', i: 'vagrant', c: '#6366f1', e: '📦' }] },
-            { h: '📡 Data & Messaging', tags: [{ n: 'Kafka', i: 'apachekafka', c: '#ec4899', e: '📡' }, { n: 'Confluent', i: 'confluent', c: '#ec4899', e: '🔀' }, { n: 'RabbitMQ', i: 'rabbitmq', c: '#f97316', e: '🐇' }, { n: 'StreamSets', i: '', c: '#14b8a6', e: '🔄' }, { n: 'Spark', i: 'apachespark', c: '#f59e0b', e: '⚡' }] },
-            { h: '📊 Observability', tags: [{ n: 'Prometheus', i: 'prometheus', c: '#ef4444', e: '🔴' }, { n: 'Grafana', i: 'grafana', c: '#f59e0b', e: '📈' }, { n: 'ELK Stack', i: 'elasticstack', c: '#10b981', e: '🔍' }, { n: 'Dynatrace', i: 'dynatrace', c: '#6366f1', e: '🟣' }, { n: 'Splunk', i: 'splunk', c: '#ec4899', e: '🔮' }, { n: 'Telegraf', i: 'influxdb', c: '#3B82F6', e: '📊' }, { n: 'Stackdriver', i: 'googlecloud', c: '#10b981', e: '📡' }] },
-            { h: '💻 Languages', tags: [{ n: 'Java', i: 'java', c: '#ef4444', e: '☕' }, { n: 'Python', i: 'python', c: '#3B82F6', e: '🐍' }, { n: 'Bash', i: 'gnubash', c: '#10b981', e: '🖥️' }, { n: 'Dart', i: 'dart', c: '#06b6d4', e: '🎯' }] },
-            { h: '🧩 Frameworks', tags: [{ n: 'Spring', i: 'spring', c: '#10b981', e: '🍃' }, { n: 'Flask', i: 'flask', c: '#3B82F6', e: '🌶️' }, { n: 'Flutter', i: 'flutter', c: '#06b6d4', e: '🦋' }] },
-            { h: '🔧 CI/CD & Config', tags: [{ n: 'GitHub Actions', i: 'githubactions', c: '#1f2937', e: '🐙' }, { n: 'Azure DevOps', i: 'azuredevops', c: '#3B82F6', e: '🔷' }, { n: 'Ansible', i: 'ansible', c: '#ef4444', e: '⚙️' }, { n: 'Puppet', i: 'puppet', c: '#f59e0b', e: '🤖' }, { n: 'Chef', i: 'chef', c: '#f97316', e: '🧑‍🍳' }, { n: 'Salt', i: 'saltproject', c: '#8B5CF6', e: '🧂' }] },
-            { h: '🗄️ Databases', tags: [{ n: 'PostgreSQL', i: 'postgresql', c: '#3B82F6', e: '🐘' }, { n: 'MongoDB', i: 'mongodb', c: '#10b981', e: '🍃' }, { n: 'MySQL', i: 'mysql', c: '#06b6d4', e: '🐬' }, { n: 'InfluxDB', i: 'influxdb', c: '#3B82F6', e: '📊' }, { n: 'Oracle DB', i: 'oracle', c: '#ef4444', e: '🏛️' }] },
-            { h: '🌐 Service Mesh & Proxy', tags: [{ n: 'Nginx', i: 'nginx', c: '#10b981', e: '🟩' }, { n: 'Traefik', i: 'traefikproxy', c: '#06b6d4', e: '🔀' }, { n: 'Istio', i: 'istio', c: '#3B82F6', e: '🕸️' }] },
-            { h: '📦 Build & Storage', tags: [{ n: 'Maven', i: 'apachemaven', c: '#ef4444', e: '🏗️' }, { n: 'SBT', i: 'scala', c: '#ef4444', e: '🔨' }, { n: 'Pip', i: 'pypa', c: '#3B82F6', e: '📦' }, { n: 'S3', i: 'amazons3', c: '#ef4444', e: '☁️' }, { n: 'GCS', i: 'googlecloud', c: '#10b981', e: '☁️' }, { n: 'ADLS', i: 'microsoftazure', c: '#3B82F6', e: '☁️' }] }
+            { h: '🏗️ Infrastructure & IaC', tags: [{ n: 'Terraform', i: 'terraform', c: '#8B5CF6', e: '🟪' }, { n: 'Kubernetes', i: 'kubernetes', c: '#3B82F6', e: '☸️' }, { n: 'Docker', i: 'docker', c: '#06b6d4', e: '🐳' }, { n: 'Helm', i: 'helm', c: '#0f766e', e: '⎈' }, { n: 'Kustomize', i: 'kubernetes', c: '#3B82F6', e: '📋' }, { n: 'LXC', i: '', c: '#f97316', e: '📦' }, { n: 'Firecracker', i: '', c: '#f59e0b', e: '🔥' }, { n: 'Vagrant', i: 'vagrant', c: '#6366f1', e: '📦' }, { n: 'Packer', i: 'packer', c: '#06b6d4', e: '📦' }] },
+            { h: '📡 Data & Messaging', tags: [{ n: 'Kafka', i: 'apachekafka', c: '#ec4899', e: '📡' }, { n: 'Confluent', i: 'confluent', c: '#ec4899', e: '🔀' }, { n: 'RabbitMQ', i: 'rabbitmq', c: '#f97316', e: '🐇' }, { n: 'StreamSets', i: '', c: '#14b8a6', e: '🔄' }, { n: 'Spark', i: 'apachespark', c: '#f59e0b', e: '⚡' }, { n: 'Delta Lake', i: '', c: '#ef4444', e: '🔺' }, { n: 'Apache Iceberg', i: '', c: '#3B82F6', e: '🧊' }, { n: 'Hive Metastore', i: 'apachehive', c: '#f59e0b', e: '🐝' }] },
+            { h: '📊 Observability', tags: [{ n: 'Grafana', i: 'grafana', c: '#f59e0b', e: '📈' }, { n: 'Prometheus', i: 'prometheus', c: '#ef4444', e: '🔴' }, { n: 'Alertmanager', i: 'prometheus', c: '#ef4444', e: '🔔' }, { n: 'Splunk', i: 'splunk', c: '#ec4899', e: '🔮' }, { n: 'Dynatrace', i: 'dynatrace', c: '#6366f1', e: '🟣' }, { n: 'EFK/ELK Stack', i: 'elasticstack', c: '#10b981', e: '🔍' }, { n: 'Telegraf', i: 'influxdb', c: '#3B82F6', e: '📊' }, { n: 'InfluxDB', i: 'influxdb', c: '#3B82F6', e: '📊' }, { n: 'Stackdriver', i: 'googlecloud', c: '#10b981', e: '📡' }, { n: 'Spark History Server', i: 'apachespark', c: '#f59e0b', e: '⚡' }] },
+            { h: '💻 Languages', tags: [{ n: 'Java', i: 'java', c: '#ef4444', e: '☕' }, { n: 'Python', i: 'python', c: '#3B82F6', e: '🐍' }, { n: 'Dart', i: 'dart', c: '#06b6d4', e: '🎯' }, { n: 'Bash', i: 'gnubash', c: '#10b981', e: '🖥️' }, { n: 'HCL', i: 'terraform', c: '#8B5CF6', e: '🟪' }, { n: 'SQL', i: '', c: '#3B82F6', e: '🗃️' }, { n: 'YAML', i: '', c: '#ef4444', e: '📄' }] },
+            { h: '🧩 Frameworks', tags: [{ n: 'Spring Boot', i: 'springboot', c: '#10b981', e: '🍃' }, { n: 'Flask', i: 'flask', c: '#3B82F6', e: '🌶️' }, { n: 'Flutter', i: 'flutter', c: '#06b6d4', e: '🦋' }, { n: 'PySpark', i: 'apachespark', c: '#f59e0b', e: '⚡' }, { n: 'Spark SQL', i: 'apachespark', c: '#f59e0b', e: '⚡' }] },
+            { h: '🔧 CI/CD & GitOps', tags: [{ n: 'GitHub Actions', i: 'githubactions', c: '#1f2937', e: '🐙' }, { n: 'Azure DevOps', i: 'azuredevops', c: '#3B82F6', e: '🔷' }, { n: 'Ansible', i: 'ansible', c: '#ef4444', e: '⚙️' }, { n: 'Puppet', i: 'puppet', c: '#f59e0b', e: '🤖' }, { n: 'Chef', i: 'chef', c: '#f97316', e: '🧑‍🍳' }, { n: 'Salt', i: 'saltproject', c: '#8B5CF6', e: '🧂' }, { n: 'Git', i: 'git', c: '#f05032', e: '🔀' }] },
+            { h: '🗄️ Databases', tags: [{ n: 'PostgreSQL', i: 'postgresql', c: '#3B82F6', e: '🐘' }, { n: 'MongoDB Atlas', i: 'mongodb', c: '#10b981', e: '🍃' }, { n: 'MySQL', i: 'mysql', c: '#06b6d4', e: '🐬' }, { n: 'Oracle DB', i: 'oracle', c: '#ef4444', e: '🏛️' }, { n: 'InfluxDB', i: 'influxdb', c: '#3B82F6', e: '📊' }, { n: 'Cloud SQL', i: 'googlecloud', c: '#10b981', e: '☁️' }, { n: 'Azure SQL', i: 'microsoftazure', c: '#3B82F6', e: '🔷' }] },
+            { h: '🌐 Networking & Proxy', tags: [{ n: 'Nginx', i: 'nginx', c: '#10b981', e: '🟩' }, { n: 'Traefik', i: 'traefikproxy', c: '#06b6d4', e: '🔀' }, { n: 'Istio', i: 'istio', c: '#3B82F6', e: '🕸️' }, { n: 'HAProxy', i: '', c: '#10b981', e: '⚖️' }, { n: 'VPC/VPN', i: '', c: '#8B5CF6', e: '🔒' }, { n: 'ALB/NLB', i: 'amazonwebservices', c: '#f59e0b', e: '⚖️' }, { n: 'Route 53', i: 'amazonwebservices', c: '#f59e0b', e: '🌍' }, { n: 'Cloud DNS', i: 'googlecloud', c: '#10b981', e: '🌍' }] },
+            { h: '🔒 Security', tags: [{ n: 'JFrog Xray', i: 'jfrog', c: '#10b981', e: '🔍' }, { n: 'Snyk', i: 'snyk', c: '#8B5CF6', e: '🛡️' }, { n: 'Trivy', i: '', c: '#06b6d4', e: '🔒' }, { n: 'SonarQube', i: 'sonarqube', c: '#06b6d4', e: '📊' }, { n: 'OWASP ZAP', i: 'owasp', c: '#ef4444', e: '🕷️' }, { n: 'HashiCorp Vault', i: 'vault', c: '#f59e0b', e: '🔐' }, { n: 'Azure AD SSO', i: 'microsoftazure', c: '#3B82F6', e: '🔑' }] },
+            { h: '🧪 Testing', tags: [{ n: 'Pytest', i: 'pytest', c: '#3B82F6', e: '🧪' }, { n: 'Selenium', i: 'selenium', c: '#10b981', e: '🌐' }, { n: 'OWASP ZAP', i: 'owasp', c: '#ef4444', e: '🕷️' }, { n: 'E2E Automation', i: '', c: '#8B5CF6', e: '🔄' }, { n: 'UI Regression', i: '', c: '#f59e0b', e: '🖥️' }] },
+            { h: '📦 Build & Storage', tags: [{ n: 'Maven Central', i: 'apachemaven', c: '#ef4444', e: '🏗️' }, { n: 'PyPI', i: 'pypi', c: '#3B82F6', e: '📦' }, { n: 'JFrog Artifactory', i: 'jfrog', c: '#10b981', e: '📦' }, { n: 'S3', i: 'amazons3', c: '#ef4444', e: '☁️' }, { n: 'GCS', i: 'googlecloud', c: '#10b981', e: '☁️' }, { n: 'ADLS', i: 'microsoftazure', c: '#3B82F6', e: '☁️' }] },
+            { h: '🤖 AI & Tooling', tags: [{ n: 'GitHub Copilot', i: 'githubcopilot', c: '#1f2937', e: '🤖' }, { n: 'Claude', i: 'anthropic', c: '#8B5CF6', e: '🧠' }, { n: 'GPT-4', i: 'openai', c: '#10b981', e: '🤖' }, { n: 'Gemini', i: 'google', c: '#3B82F6', e: '💎' }] }
         ];
 
         let html = '';
