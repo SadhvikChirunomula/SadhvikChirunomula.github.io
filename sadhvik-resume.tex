@@ -1,0 +1,435 @@
+%--------------------------------------------
+% Sadhvik Chirunomula — Resume (v6, expanded 3-page)
+% Overleaf / pdfLaTeX compatible
+%--------------------------------------------
+
+\documentclass[10pt, letterpaper]{article}
+
+\usepackage[top=0.40in, bottom=0.40in, left=0.55in, right=0.55in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{microtype}
+\usepackage{helvet}
+\usepackage{ragged2e}
+\renewcommand{\familydefault}{\sfdefault}
+
+%--- All black
+\definecolor{dark}{HTML}{111111}
+\definecolor{mid}{HTML}{555555}
+
+%--- Page style
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\footskip}{4pt}
+\setlength{\parindent}{0pt}
+
+%--- Hyperlinks black
+\hypersetup{colorlinks=true, urlcolor=black, linkcolor=black}
+
+%--- Section headings
+\titleformat{\section}{%
+  \vspace{-2pt}\bfseries\normalsize\scshape\color{dark}%
+}{}{0em}{}[\vspace{1pt}{\color{dark}\hrule height 0.8pt}\vspace{-2pt}]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+%--- Bullet list
+\setlist[itemize]{
+  leftmargin=14pt,
+  label={\small\textbullet},
+  itemsep=1.5pt,
+  parsep=0pt,
+  topsep=2pt,
+  partopsep=0pt
+}
+
+%--- Skills table column widths
+\newlength{\skilllabel}
+\setlength{\skilllabel}{1.52in}
+
+%--- Job heading command
+\newcommand{\job}[4]{%
+  \vspace{4pt}%
+  \noindent\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}%
+    \textbf{#1}\enspace{\color{mid}\small$|$\enspace#2,\ #3} &
+    {\color{mid}\small\textit{#4}}%
+  \end{tabular*}%
+  \vspace{0pt}%
+}
+
+%--- Education row
+\newcommand{\edu}[3]{%
+  \noindent\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}%
+    \textbf{#1}\enspace{\color{mid}\small---\enspace#2} &
+    {\color{mid}\small\textit{#3}}%
+  \end{tabular*}\vspace{1pt}%
+}
+
+%--- Project heading command
+\newcommand{\proj}[2]{%
+  \vspace{3pt}%
+  \noindent\textbf{#1}\enspace{\color{mid}\small--- #2}%
+  \vspace{0pt}%
+}
+
+%============================================
+\begin{document}
+%============================================
+
+%--- HEADER
+\begin{center}
+  {\fontsize{19pt}{22pt}\selectfont\textbf{SADHVIK CHIRUNOMULA}}\\[3pt]
+  {\small\color{mid}Senior DevOps \& Platform Engineer\ \ $\cdot$\ \ Cloud-Native Infrastructure\ \ $\cdot$\ \ Multi-Cloud (GCP, Azure, AWS)}\\[4pt]
+  {\footnotesize
+    \href{mailto:sadhu1998@gmail.com}{sadhu1998@gmail.com}\ \ $\cdot$\ \
+    +91\,9160230298\ \ $\cdot$\ \
+    Hyderabad, India\ \ $\cdot$\ \
+    \href{https://www.linkedin.com/in/sadhvik-chirunomula-080064170/}{LinkedIn}\ \ $\cdot$\ \
+    \href{https://github.com/SadhvikChirunomula}{GitHub}\ \ $\cdot$\ \
+    \href{https://sadhvikchirunomula.github.io/}{Portfolio}
+  }
+\end{center}
+\vspace{-2pt}
+{\color{dark}\hrule height 0.8pt}
+\vspace{3pt}
+
+%--- PROFESSIONAL SUMMARY
+\section{Professional Summary}
+{\small \textbf{Senior DevOps \& Platform Engineer} with \textbf{6.5 years} of hands-on experience architecting,
+automating, and scaling multi-tenant cloud-native data platforms across \textbf{GCP, Azure, and AWS}.
+Currently leading a \textbf{30-engineer cross-functional team} (all direct reports) delivering a
+\textbf{SaaS data-engineering platform} used by \textbf{500+ data engineers} at Fortune~500 healthcare and
+life-sciences enterprises. Deep expertise in \textbf{Terraform IaC, Kubernetes orchestration (GKE/EKS/AKS),
+CI/CD automation, Apache Spark infrastructure, cost-optimised compute scheduling}, and production
+observability at scale. Track record of saving up to \textbf{\$70K/month} in infrastructure costs,
+reducing MTTR by \textbf{40\%}, and cutting deployment errors by \textbf{70\%}. Proven experience in
+\textbf{pre-sales engineering, product demos, and enterprise POC delivery} at industry summits
+including the Data Engineering Summit (DES). Actively leverages \textbf{AI-assisted development}
+(GitHub Copilot, Antigravity, Claude Code, GPT Codex) to accelerate IaC authoring, pipeline
+development, and operational automation.}
+
+%--- TECHNOLOGIES
+\section{Technologies}
+
+\noindent\begin{tabular}{@{}p{\skilllabel}@{\hspace{6pt}}p{\dimexpr\textwidth-\skilllabel-6pt}@{}}
+  \textbf{Languages}        & {\small Java, Python, Dart, Bash, HCL (Terraform), SQL, YAML} \\[2pt]
+  \textbf{Frameworks}       & {\small Spring Boot, Flask, Flutter, Apache Spark (PySpark, Spark SQL)} \\[2pt]
+  \textbf{IaC \& Containers}& {\small Terraform (modules, workspaces, remote state), Docker
+    (multi-stage builds, Compose), Kubernetes (Helm, Kustomize, RBAC, HPA, PDB, Network Policies),
+    LXC, Firecracker microVMs, Vagrant, Packer} \\[2pt]
+  \textbf{CI/CD \& GitOps}  & {\small GitHub Actions, Azure DevOps Pipelines, Ansible, Puppet, Chef, Salt,
+    Git (branching strategies, mono-repo), PyPI, Maven Central, Semantic Versioning} \\[2pt]
+  \textbf{Testing}          & {\small Pytest, Selenium, OWASP ZAP, Integration/E2E test automation,
+    UI regression testing} \\[2pt]
+  \textbf{Cloud --- GCP}    & {\small GKE, Cloud Run, Compute Engine, Cloud Functions, Pub/Sub, BigQuery,
+    Dataproc, GCS, Cloud SQL, VPC, IAM, Cloud Build, Stackdriver, Cloud Armor} \\[2pt]
+  \textbf{Cloud --- Azure}  & {\small AKS, Azure VMs, App Service, ADLS Gen2, Azure SQL,
+    Azure DevOps, ARM/Bicep, Azure AD (SAML/OAuth), Azure Monitor, NSGs} \\[2pt]
+  \textbf{Cloud --- AWS}    & {\small EKS, EC2, S3, RDS, Lambda, EMR, CloudFormation, IAM,
+    CloudWatch, Route\,53, ALB/NLB, AWS Marketplace} \\[2pt]
+  \textbf{Observability}    & {\small Grafana, Prometheus, Alertmanager, Splunk, Dynatrace,
+    EFK/ELK Stack, Telegraf, InfluxDB, Stackdriver, Apache Spark History Server} \\[2pt]
+  \textbf{Data \& Messaging}& {\small Apache Kafka, Confluent Kafka (Schema Registry, Connect),
+    RabbitMQ, StreamSets Data Collector, Apache Hive Metastore, Delta Lake, Apache Iceberg} \\[2pt]
+  \textbf{Databases}        & {\small PostgreSQL, MySQL, Oracle DB, MongoDB Atlas (sharding, replica sets),
+    InfluxDB, Cloud SQL, Azure SQL} \\[2pt]
+  \textbf{Security}         & {\small JFrog Xray, Snyk, Trivy, SonarQube, Azure AD SSO (SAML 2.0, OAuth 2.0),
+    Ingress/Egress policies, Firewall rules, Security Groups, Secrets Management (Vault, GCP Secret Manager)} \\[2pt]
+  \textbf{Networking}       & {\small VPC (peering, shared VPC, private Google access), Load Balancers (ALB, NLB,
+    GCP LB), DNS (Route\,53, Cloud DNS), Nginx, Traefik, Istio service mesh, HAProxy} \\[2pt]
+  \textbf{AI \& Tooling}    & {\small GPT-4, Gemini, Claude\ \ $\cdot$\ \ GitHub Copilot, Antigravity,
+    Claude Code, GPT Codex\ \ $\cdot$\ \ LLM-assisted IaC generation, pipeline debugging, incident triage} \\
+\end{tabular}
+
+%--- EXPERIENCE
+\section{Experience}
+
+% ==================== LEAD PRODUCT ENGINEER ====================
+\job{Lead Product Engineer}{Modak Analytics}{Hyderabad}{Sep 2024 -- Present}
+
+{\small\color{mid}\textit{Leading engineering for a multi-cloud SaaS data-engineering platform serving
+Fortune~500 healthcare \& life-sciences enterprises. Platform enables cost-optimised Apache Spark
+workloads across GCP, Azure, and AWS with a custom control plane, CLI, REST API, and web UI.}}
+
+\begin{itemize}
+  \item Led \textbf{30 direct reports} across UI, API, QA, Database, and Platform tracks ---
+    owned hiring pipelines, mentorship, sprint planning, architecture reviews, and
+    cross-track delivery accountability with a \textbf{zero-attrition record} in the first year.
+
+  \item Drove \textbf{product roadmap and feature prioritisation} directly with C-suite and enterprise
+    stakeholders, translating business goals into quarterly milestones and achieving
+    \textbf{100\% on-time delivery} across 4 consecutive quarters.
+
+  \item Architected the \textbf{multi-tenant SaaS control plane} that orchestrates Apache Spark
+    cluster lifecycles (provisioning, auto-scaling, auto-stop, teardown) across GCP Dataproc,
+    AWS EMR, and Azure HDInsight, serving \textbf{500+ data engineers} running
+    \textbf{10K+ Spark jobs/week}.
+
+  \item Designed a \textbf{custom compute scheduler} for dynamic VM orchestration, implementing
+    intelligent auto-scaling with preemptible/spot instance failover, checkpointing, and
+    graceful migration --- achieving \textbf{60--80\% compute cost reduction} vs.\ on-demand pricing.
+
+  \item Built the platform \textbf{CLI in Python}, packaged and \textbf{published to PyPI} with
+    semantic versioning, automated release pipelines, and changelog generation --- enabling
+    scriptable cluster, job, and notebook management for enterprise automation workflows.
+
+  \item Designed the \textbf{REST API} layer and \textbf{Java SDK} (published to \textbf{Maven Central}),
+    enabling programmatic infrastructure provisioning, job submission, and status polling
+    across all supported cloud providers.
+
+  \item Designed and shipped the \textbf{interactive notebook infrastructure} with real-time
+    coauthoring, version control, integrated data visualisation, and automatic dependency
+    management for PySpark and Spark SQL workloads.
+
+  \item Built \textbf{multi-cloud Terraform modules} (GCP, Azure, AWS) with remote state management
+    (GCS/S3 backends), workspace isolation per tenant, and Sentinel/OPA policy-as-code
+    guardrails for SOC~2 compliance.
+
+  \item Implemented \textbf{tenant isolation architecture} with dedicated VPCs, network policies,
+    RBAC, and namespace-level Kubernetes isolation --- supporting \textbf{10+ enterprise tenants}
+    with HIPAA/GDPR-compliant data residency controls.
+
+  \item Managed \textbf{Apache Spark runtime versioning} with Long-Term Support (LTS) releases,
+    integrated \textbf{data catalog support} (Hive Metastore, Unity Catalog, Delta Lake,
+    Apache Iceberg), and enabled \textbf{CUDA GPU acceleration} for ML/AI workloads.
+
+  \item Reduced deployment cycle time by \textbf{40\%} (from 45\,min to 27\,min), by automating
+    end-to-end CI/CD pipelines (build $\rightarrow$ scan $\rightarrow$ test $\rightarrow$ deploy $\rightarrow$ rollback)
+    via GitHub Actions with Docker multi-stage builds, Helm chart packaging, and automated
+    blue-green and canary releases.
+
+  \item Owned \textbf{product release management} end-to-end --- defined release cadences,
+    authored structured release notes, managed version tagging (semantic versioning),
+    and coordinated cross-team release trains across UI, API, CLI, and SDK artefacts.
+
+  \item Built \textbf{automated test pipelines}: integration tests (API contract validation),
+    \textbf{OWASP ZAP} security scans (DAST) on every PR, \textbf{Selenium-based UI regression}
+    tests, and end-to-end smoke tests --- achieving \textbf{95\%+ test coverage} on critical paths.
+
+  \item Shipped production SaaS listings across \textbf{AWS, Azure, and GCP Marketplaces} with
+    automated licensing, metered billing, entitlement APIs, and subscription management ---
+    reducing customer onboarding from \textbf{2 weeks to 3 days}.
+
+  \item Provisioned auto-scaling \textbf{Apache Spark clusters} on Kubernetes + Terraform,
+    cutting environment setup by \textbf{75\%} and infrastructure costs by \textbf{50\%}
+    (\textasciitilde\textbf{\$70K/month saved}).
+
+  \item Evaluated and integrated \textbf{LXC containers} and \textbf{Firecracker microVMs} as
+    lightweight compute alternatives to traditional VMs, reducing \textbf{VM bootstrap time
+    from 3--5 minutes to under 30 seconds} and improving cluster cold-start performance
+    for ephemeral Spark workloads.
+
+  \item Designed \textbf{cost-aware billing dashboards} with real-time cloud spend visibility
+    per tenant, automated budget alerting, and resource tagging enforcement across all
+    three cloud providers.
+
+  \item Built a \textbf{no-code migration utility} to ingest Spark jobs, notebooks, and
+    configurations from Databricks, Dataproc, and EMR, converting them into
+    platform-ready pipelines --- reducing migration effort by \textbf{80\%}.
+
+  \item Implemented \textbf{comprehensive audit logging} and \textbf{RBAC with fine-grained
+    access control} across all platform operations (cluster, job, notebook, tenant),
+    enabling SOC~2 and HIPAA compliance audit trails.
+
+  \item \textbf{Led pre-sales engineering and product pitching} --- delivered live product demos
+    to Fortune~500 prospects, designed and executed \textbf{enterprise POCs} end-to-end,
+    and participated in technical RFP responses that secured new contracts.
+
+  \item Showcased the platform at the \textbf{Data Engineering Summit (DES)} organised by AIM,
+    India's premier data engineering conference --- presenting architecture deep-dives
+    and live demos to 500+ attendees.
+
+  \item Represented engineering in \textbf{15+ executive briefings, enterprise panels, and
+    customer advisory calls}, directly influencing \textbf{multi-million-dollar contract
+    renewals} and shaping product direction for key Fortune~500 accounts.
+\end{itemize}
+
+% ==================== SENIOR DEVOPS ENGINEER ====================
+\job{Senior DevOps Engineer}{Modak Analytics}{Hyderabad}{Mar 2022 -- Aug 2024}
+
+{\small\color{mid}\textit{Embedded Platform Engineer for a life-sciences data platform --- responsible for
+infrastructure architecture, tooling standardisation, and cloud cost governance across 5 product teams.}}
+
+\begin{itemize}
+  \item Served as \textbf{embedded Platform Engineer}, leading technical stack evaluation, tooling
+    standardisation, and infrastructure architecture decisions across the engineering org.
+
+  \item Built \textbf{Terraform golden modules} for VPC provisioning (peering, shared VPC,
+    private service access), JFrog Artifactory, and Splunk integration --- reducing
+    new-tenant onboarding from \textbf{3 days to under 4 hours}.
+
+  \item Authored \textbf{reusable Helm charts} for all internal microservices with standardised
+    health checks, resource limits, liveness/readiness probes, and Prometheus
+    ServiceMonitor annotations.
+
+  \item Reduced deployment errors by \textbf{70\%} and release cycle time by \textbf{50\%} via
+    GitOps-driven CI/CD (GitHub Actions + Azure DevOps) with automated linting, unit tests,
+    integration tests, container scanning (Trivy), and SAST (SonarQube).
+
+  \item Architected \textbf{on-demand compute orchestration} across GCP Preemptible VMs, AWS Spot
+    Instances, and Azure Spot VMs with automated failover, state checkpointing, and graceful
+    drain --- achieving \textbf{zero data loss} on spot interruptions and \textbf{40\% compute
+    cost savings}.
+
+  \item Implemented \textbf{Kubernetes cluster management} at scale: HPA (Horizontal Pod Autoscaler),
+    PDB (Pod Disruption Budgets), RBAC, Network Policies, resource quotas, and namespace
+    isolation across multi-tenant environments.
+
+  \item Hardened multi-cloud security posture by implementing \textbf{ingress/egress firewall
+    rules}, VPC Service Controls, security groups, and \textbf{shift-left vulnerability scanning}
+    (JFrog Xray + Snyk) in CI/CD --- achieving \textbf{zero critical CVEs} in production for
+    12+ months.
+
+  \item Designed \textbf{cloud cost governance framework}: automated billing dashboards (Grafana +
+    BigQuery/Azure Cost Management), tagging enforcement via Terraform, and budget alerting
+    with PagerDuty escalation --- achieving \textbf{25--35\% monthly spend reduction}
+    (\textasciitilde\textbf{\$25K/month saved}).
+
+  \item Built a \textbf{real-time observability stack} (Grafana, Prometheus, Alertmanager, ELK,
+    Splunk, Stackdriver) with standardised dashboards, SLI/SLO-driven alerting rules,
+    and incident runbooks --- reducing \textbf{MTTR from 4~hours to 2.4~hours (40\%)}.
+
+  \item Integrated \textbf{Apache Spark History Server} and Spark UI proxying into the platform
+    observability layer for job-level performance monitoring, stage analysis, and
+    executor memory profiling.
+
+  \item Designed \textbf{automated infrastructure drift detection} using Terraform plan diffs
+    in CI/CD, with Slack/PagerDuty notifications and auto-remediation for common
+    configuration drift patterns.
+
+  \item Built \textbf{self-service developer portals} enabling product teams to provision
+    cloud resources, spin up environments, and manage secrets (HashiCorp Vault,
+    GCP Secret Manager) without DevOps intervention.
+
+  \item Deployed \textbf{Confluent Kafka} (Schema Registry, Connect, ksqlDB) for real-time event
+    streaming between platform services, handling \textbf{50K+ events/minute} with exactly-once
+    delivery guarantees.
+
+  \item Delivered \textbf{marketplace-ready SaaS integrations} (AWS, Azure, GCP) with automated
+    licensing, usage metering, billing pipelines, and entitlement verification via
+    cloud-native APIs.
+\end{itemize}
+
+% ==================== DEVOPS ENGINEER ====================
+\job{DevOps Engineer}{Modak Analytics}{Hyderabad}{Apr 2020 -- Feb 2022}
+
+{\small\color{mid}\textit{Infrastructure engineer for a life-sciences data platform --- customer-facing cloud
+deployments across GCP and Azure, with a focus on networking, database management, and containerisation.}}
+
+\begin{itemize}
+  \item Provisioned \textbf{customer-specific infrastructure} on GCP and Azure (Compute Engine,
+    Cloud Run, PostgreSQL, GCS, ADLS Gen2, VPCs, subnet design, firewall rules) via
+    parameterised Terraform modules, reducing setup time by \textbf{60\%}.
+
+  \item Managed \textbf{MongoDB Atlas} clusters on GCP and Azure with geo-based, hash-based, and
+    range-based sharding strategies, achieving \textbf{3$\times$ query performance improvement}
+    and multi-region data residency compliance (GDPR, HIPAA).
+
+  \item Enabled \textbf{SSO via Azure AD} (SAML 2.0, OAuth 2.0) for internal tooling and
+    customer-facing SaaS applications across \textbf{200+ users}, reducing password-reset
+    tickets by \textbf{80\%} and achieving SOC~2-compliant identity management.
+
+  \item Built \textbf{multi-tenant VPC topologies} on GCP with VPC peering, shared VPC, private
+    Google access, and dedicated subnets per tenant --- achieving SOC~2-compliant network
+    isolation for \textbf{8 enterprise customers}.
+
+  \item Integrated \textbf{JFrog Artifactory} as a universal artifact repository (Docker, Maven,
+    PyPI, Helm) with Xray vulnerability scanning, ensuring all production images pass
+    security gates before deployment.
+
+  \item Deployed \textbf{containerised microservices} on Kubernetes with rolling updates, health
+    checks, pod disruption budgets, and multi-region failover --- achieving
+    \textbf{99.95\% uptime} with zero-downtime deployments.
+
+  \item Automated \textbf{StreamSets Data Collector} and \textbf{Confluent Kafka} deployments across
+    GCP and Azure via Ansible playbooks and Terraform, reducing pipeline failure rates by
+    \textbf{60\%}.
+
+  \item Achieved \textbf{sub-2-hour bottleneck resolution} by implementing full-stack observability
+    via Splunk (log aggregation, custom dashboards, alerting) and Dynatrace (APM, distributed
+    tracing, code-level profiling).
+
+  \item Designed \textbf{backup and disaster recovery} strategies for PostgreSQL and MongoDB with
+    automated snapshots, cross-region replication, and point-in-time recovery --- achieving
+    \textbf{RPO < 1~hour} and \textbf{RTO < 2~hours}.
+\end{itemize}
+
+% ==================== DATA ENGINEER ====================
+\job{Data Engineer}{Modak Analytics}{Hyderabad}{Sep 2019 -- Mar 2020}
+
+{\small\color{mid}\textit{Built enterprise data pipelines processing 1TB+ daily across multi-cloud
+environments using Java, StreamSets, and Apache Kafka.}}
+
+\begin{itemize}
+  \item Built a \textbf{Java-based ETL platform} on StreamSets Data Collector + PostgreSQL,
+    handling \textbf{1TB+ daily data ingestion} across GCP, Azure, and AWS for
+    5 enterprise data sources (Oracle, MongoDB, S3, ADLS, GCS).
+
+  \item Engineered \textbf{reusable pipeline connectors} for Apache Kafka, GCS, S3, ADLS, Oracle,
+    and MongoDB with custom error-handling, retry logic, and dead-letter queues ---
+    reducing integration effort for new data sources by \textbf{70\%}.
+
+  \item Automated \textbf{end-to-end PaaS provisioning} (Cloud SQL, Cloud Run, GCS buckets, Azure
+    App Service, ADLS containers) across three clouds via Terraform and Bash, improving
+    deployment speed by \textbf{60\%}.
+
+  \item Implemented \textbf{data quality validation} pipelines with schema drift detection,
+    null-check assertions, and row-count reconciliation, ensuring \textbf{99.5\% data accuracy}
+    across ingestion workflows.
+\end{itemize}
+
+%--- OPEN-SOURCE / PROJECTS
+\section{Projects \& Open Source}
+
+\proj{Terraform Automator}{\href{https://github.com/SadhvikChirunomula/terraform-automator}{GitHub}
+\ \ $\cdot$\ \ HCL, GitHub Actions, GCP}
+\begin{itemize}
+  \item Built a \textbf{GitHub Actions--driven Terraform pipeline} for GCP with automated
+    \texttt{plan}, \texttt{apply}, and \texttt{destroy} stages, approval gates, remote state
+    locking (GCS backend), and Slack notifications on drift detection.
+\end{itemize}
+
+\proj{Docker Watcher}{\href{https://github.com/SadhvikChirunomula/Docker-Watcher}{GitHub}
+\ \ $\cdot$\ \ Python, Flask, Docker API}
+\begin{itemize}
+  \item Developed a \textbf{real-time Docker container monitoring} web app displaying CPU, memory,
+    network metrics, and health status with WebSocket-based live refresh and colour-coded
+    status badges.
+\end{itemize}
+
+\proj{EFMK Monitoring Stack}{\href{https://github.com/SadhvikChirunomula/EFMK-Monitoring}{GitHub}
+\ \ $\cdot$\ \ EFK, Kafka, Docker Compose}
+\begin{itemize}
+  \item Assembled a production-grade \textbf{Elasticsearch + Fluentd + Kibana + Kafka} observability
+    stack for centralised log aggregation, real-time alerting, and dashboard visualisation
+    across containerised microservices.
+\end{itemize}
+
+\proj{Nginx Multi-Service Proxy}{\href{https://github.com/SadhvikChirunomula/nginx-docker-multiservice-demo}{GitHub}
+\ \ $\cdot$\ \ Nginx, Docker, Reverse Proxy}
+\begin{itemize}
+  \item Built a \textbf{Docker Compose--based multi-service architecture} with Nginx reverse proxy,
+    demonstrating service routing, load balancing, SSL termination, and upstream health checking.
+\end{itemize}
+
+\proj{Donor Near Me}{\href{https://github.com/SadhvikChirunomula/Donor-Near-Me-App}{GitHub}
+\ \ $\cdot$\ \ Flutter, Python, Firebase}
+\begin{itemize}
+  \item Built a \textbf{Flutter PWA} with a Python/Flask backend for real-time blood-donor discovery
+    featuring geolocation, push notifications, donation cooldown tracking, and donor
+    certificate generation.
+\end{itemize}
+
+%--- EDUCATION
+\section{Education}
+
+\edu{B.E. Electronics \& Communication}{Osmania University, Hyderabad}{Jun 2019}
+
+\end{document}
