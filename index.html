@@ -1,372 +1,980 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sadhvik Chirunomula - Lead Product Engineer</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f7f6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 960px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        }
-        header {
-            text-align: center;
-            border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        header h1 {
-            font-size: 2.5em;
-            color: #2c3e50;
-            margin-bottom: 0;
-        }
-        header h2 {
-            font-size: 1.5em;
-            color: #34495e;
-            font-weight: 400;
-            margin-top: 5px;
-        }
-        .contact-info {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
-            font-size: 0.95em;
-        }
-        .contact-info a {
-            text-decoration: none;
-            color: #3498db;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .contact-info a:hover {
-            background-color: #ecf0f1;
-            text-decoration: underline;
-        }
-        .contact-info span {
-            padding: 5px 10px;
-            color: #555;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .section h3 {
-            font-size: 1.8em;
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 8px;
-            margin-bottom: 20px;
-        }
-        .section h4 {
-            font-size: 1.3em;
-            color: #34495e;
-            margin-bottom: 5px;
-            font-weight: 600;
-        }
-        .section h5 {
-            font-size: 1.1em;
-            color: #7f8c8d;
-            margin-bottom: 15px;
-            font-weight: 400;
-            font-style: italic;
-        }
-        .section p {
-            margin-bottom: 15px;
-            color: #555;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .section > ul > li {
-            position: relative;
-            padding-left: 25px;
-            margin-bottom: 10px;
-        }
-        .section > ul > li::before {
-            content: '•';
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: #3498db;
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-        .job {
-            margin-bottom: 25px;
-            padding-left: 15px;
-            border-left: 3px solid #ecf0f1;
-        }
-        .tech-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .tech-category h6 {
-            font-size: 1.1em;
-            color: #34495e;
-            margin-bottom: 10px;
-            margin-top: 0;
-            font-weight: 600;
-        }
-        .tech-category ul {
-            padding-left: 15px;
-            list-style-type: disc;
-        }
-         .tech-category ul li {
-            margin-bottom: 5px;
-            color: #555;
-         }
-        .education-item {
-            margin-bottom: 15px;
-        }
-        .interests-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .interests-list li {
-            background-color: #ecf0f1;
-            color: #555;
-            padding: 5px 12px;
-            border-radius: 15px;
-            font-size: 0.9em;
-        }
-        /* Remove bullet point styling for interests */
-        .interests-list li::before {
-            content: none;
-        }
-    </style>
+    <title>Sadhvik Chirunomula — Lead Product Engineer & DevOps Architect</title>
+    <meta name="description"
+        content="Sadhvik Chirunomula is a Lead Product Engineer specializing in cloud-native platforms, DevOps automation, CI/CD pipelines, and distributed data systems across AWS, Azure, and GCP.">
+    <meta name="keywords"
+        content="Sadhvik Chirunomula, DevOps, Product Engineer, Cloud Native, Terraform, Kubernetes, GCP, Azure, AWS, CI/CD">
+    <meta name="author" content="Sadhvik Chirunomula">
+    <meta property="og:title" content="Sadhvik Chirunomula — Lead Product Engineer & DevOps Architect">
+    <meta property="og:description"
+        content="Architecting scalable cloud platforms, automating infrastructure, and building enterprise-grade data systems.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-    <div class="container">
-        <header>
-            <h1>Sadhvik Chirunomula</h1>
-            <h2>Lead Product Engineer at Modak Analytics</h2>
-            <div class="contact-info">
-                <span><a href="mailto:sadhu1998@gmail.com">sadhu1998@gmail.com</a></span>
-                <span>+91 9160230298</span>
-                <span>Hyderabad, TG, India 500032</span>
+    <!-- Noise Texture Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>SC<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#techstack" class="nav-link">Tech Stack</a></li>
+                <li><a href="#timeline" class="nav-link">Career</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#architecture" class="nav-link">Architecture</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+                <svg class="theme-icon theme-icon--dark" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="5" />
+                    <path
+                        d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                </svg>
+                <svg class="theme-icon theme-icon--light" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                </svg>
+            </button>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero" id="hero">
+        <canvas class="hero-canvas" id="heroCanvas"></canvas>
+        <div class="hero-gradient-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Open to Opportunities
             </div>
-            <div class="contact-info">
-                <a href="https://www.linkedin.com/in/sadhvik-chirunomula-080064170/" target="_blank">LinkedIn</a>
-                <a href="https://sadhvikchirunomula.github.io/" target="_blank">GitHub Portfolio</a>
-                <a href="https://stackoverflow.com/users/12455245/sadhvik-chirunomula" target="_blank">Stack Overflow</a>
+            <h1 class="hero-name">
+                <span class="hero-name-line" data-text="SADHVIK">SADHVIK</span>
+                <span class="hero-name-line hero-name-accent" data-text="CHIRUNOMULA">CHIRUNOMULA</span>
+            </h1>
+            <div class="hero-typing">
+                <span class="typing-prefix">~$</span>
+                <span class="typed-text" id="typedText"></span>
+                <span class="typing-cursor">▊</span>
             </div>
-        </header>
+            <p class="hero-description">
+                Architecting scalable cloud platforms, automating infrastructure,<br>
+                and building enterprise-grade data systems.
+            </p>
+            <div class="hero-cta">
+                <a href="#timeline" class="btn btn-primary" id="ctaExplore">
+                    <span>Explore My Work</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 3v10M8 13l4-4M8 13L4 9" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="#projects" class="btn btn-secondary" id="ctaProjects">
+                    <span>View Projects</span>
+                </a>
+                <a href="SadhvikChirunomulaResume.pdf" class="btn btn-ghost" download id="ctaResume">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M2 11v2a2 2 0 002 2h8a2 2 0 002-2v-2M8 2v9M5 8l3 3 3-3" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>Resume</span>
+                </a>
+            </div>
+        </div>
+        <!-- Orbiting Tech Logos -->
+        <div class="orbit-ring" id="orbitRing">
+            <div class="orbit-item" data-name="Kubernetes" style="--i:0">
+                <div class="orbit-icon">☸️</div>
+            </div>
+            <div class="orbit-item" data-name="Terraform" style="--i:1">
+                <div class="orbit-icon">🏗️</div>
+            </div>
+            <div class="orbit-item" data-name="Docker" style="--i:2">
+                <div class="orbit-icon">🐳</div>
+            </div>
+            <div class="orbit-item" data-name="Kafka" style="--i:3">
+                <div class="orbit-icon">📡</div>
+            </div>
+            <div class="orbit-item" data-name="GCP" style="--i:4">
+                <div class="orbit-icon">☁️</div>
+            </div>
+            <div class="orbit-item" data-name="AWS" style="--i:5">
+                <div class="orbit-icon">🔶</div>
+            </div>
+            <div class="orbit-item" data-name="Azure" style="--i:6">
+                <div class="orbit-icon">🔷</div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
 
-        <main>
-            <section class="section">
-                <h3>Professional Summary</h3>
-                <p>
-                    Dynamic Lead Product Engineer at Modak Analytics with expertise in cloud-native solutions and CI/CD automation.
-                    Proven track record in architecting scalable data platforms and driving cross-functional collaboration.
-                    Skilled in Terraform and passionate about delivering enterprise-grade products that align with customer needs, enhancing system resilience and operational efficiency.
-                </p>
-            </section>
-
-            <section class="section">
-                <h3>Technologies Known</h3>
-                <div class="tech-grid">
-                    <div class="tech-category">
-                        <h6>Programming & Scripting</h6>
-                        <ul>
-                            <li>Java</li>
-                            <li>Python</li>
-                            <li>Dart</li>
-                            <li>Bash shell scripting</li>
-                        </ul>
-                    </div>
-                    <div class="tech-category">
-                        <h6>Web & App Frameworks</h6>
-                        <ul>
-                            <li>Spring (Java)</li>
-                            <li>Flask (Python)</li>
-                            <li>Flutter (Dart)</li>
-                        </ul>
-                    </div>
-                    <div class="tech-category">
-                        <h6>IaC & Containerization</h6>
-                        <ul>
-                            <li>Terraform</li>
-                            <li>Docker</li>
-                            <li>Kubernetes</li>
-                            <li>Vagrant</li>
-                        </ul>
-                    </div>
-                    <div class="tech-category">
-                        <h6>Build & Dependency</h6>
-                        <ul>
-                            <li>Maven</li>
-                            <li>SBT</li>
-                            <li>Pip</li>
-                        </ul>
-                    </div>
-                    <div class="tech-category">
-                        <h6>Data Integration & Messaging</h6>
-                        <ul>
-                            <li>StreamSets</li>
-                            <li>Apache Kafka</li>
-                            <li>Confluent Kafka</li>
-                            <li>RabbitMQ</li>
-                        </ul>
-                    </div>
-                    <div class="tech-category">
-                        <h6>Reverse Proxies & Service Mesh</h6>
-                        <ul>
-                            <li>Nginx</li>
-                            <li>Traefik</li>
-                            <li>Istio</li>
-                        </ul>
-                    </div>
-                    <div class="tech-category">
-                        <h6>CI/CD & Version Control</h6>
-                        <ul>
-                            <li>Git (GitHub, GitHub Actions)</li>
-                            <li>Azure DevOps</li>
-                            <li>Ansible</li>
-                            <li>Puppet, Chef, Salt</li>
-                        </ul>
-                    </div>
-                    <div class="tech-category">
-                        <h6>Monitoring & Observability</h6>
-                        <ul>
-                            <li>Grafana</li>
-                            <li>Telegraf, Prometheus</li>
-                            <li>Splunk</li>
-                            <li>Dynatrace</li>
-                            <li>Elastic Stack (EFK/ELK)</li>
-                            <li>Cloud Monitoring</li>
-                        </ul>
-                    </div>
-                    <div class="tech-category">
-                        <h6>Databases</h6>
-                        <ul>
-                            <li>PostgreSQL</li>
-                            <li>MySQL</li>
-                            <li>Oracle DB</li>
-                            <li>MongoDB (Atlas)</li>
-                            <li>InfluxDB</li>
-                        </ul>
-                    </div>
-                    <div class="tech-category">
-                        <h6>Cloud Platforms</h6>
-                        <ul>
-                            <li>Google Cloud Platform (GCP)</li>
-                            <li>Microsoft Azure</li>
-                            <li>Amazon Web Services (AWS)</li>
-                        </ul>
-                    </div>
-                    <div class="tech-category">
-                        <h6>Cloud Marketplace</h6>
-                        <ul>
-                            <li>GCP, Azure, and AWS</li>
-                        </ul>
-                    </div>
-                    <div class="tech-category">
-                        <h6>Operating Systems</h6>
-                        <ul>
-                            <li>Linux</li>
-                            <li>Windows</li>
-                        </ul>
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-portrait reveal-left">
+                    <div class="portrait-frame">
+                        <div class="portrait-placeholder">
+                            <div class="portrait-initials">SC</div>
+                            <div class="portrait-ring"></div>
+                            <div class="portrait-ring portrait-ring-2"></div>
+                        </div>
+                        <div class="portrait-glow"></div>
                     </div>
                 </div>
-            </section>
-
-            <section class="section">
-                <h3>Experience</h3>
-                
-                <div class="job">
-                    <h4>Lead Product Engineer</h4>
-                    <h5>Modak Analytics | Hyderabad (09/2024–Current)</h5>
-                    <ul>
-                        <li>Architected a multi-tenant, cloud-native analytics platform supporting real-time distributed processing for over 10 enterprise clients, enabling sub-second insight delivery.</li>
-                        <li>Led 6+ cross-functional teams (Product, QA, Engineering, DevOps, Sales Engineering) and ensured 100% on-time feature releases across multiple product cycles.</li>
-                        <li>Reduced deployment time by 40% through automation of CI/CD pipelines, real-time observability, and integrated tooling (CLI, REST APIS, UI).</li>
-                        <li>Represented technical roadmap in 15+ customer-facing sessions, executive briefings, and industry panels, influencing roadmap alignment and stakeholder engagement.</li>
-                        <li>Delivered SaaS integrations across AWS, Azure, and GCP marketplaces, reducing onboarding time by 30% and enabling automated licensing and billing.</li>
-                        <li>Provisioned auto-scaling Apache Spark clusters using Kubernetes, Docker, and Terraform (IaC), reducing environment setup time by 75% and cutting infrastructure costs by 50%.</li>
-                        <li>Engineered secure and scalable landing zones on Google Cloud Platform (GCP) and Microsoft Azure, aligned with enterprise architecture standards to support zero-touch provisioning across 20+ projects.</li>
-                    </ul>
-                </div>
-
-                <div class="job">
-                    <h4>Senior DevOps Engineer</h4>
-                    <h5>Modak Analytics | Hyderabad (03/2022–08/2024)</h5>
+                <div class="about-text reveal-right">
+                    <p class="about-lead"><strong>Sadhvik Chirunomula</strong> is a Lead Product Engineer specializing
+                        in cloud-native platforms, DevOps automation, and distributed data systems.</p>
+                    <p>He has built scalable infrastructure powering enterprise analytics platforms, automated
+                        multi-cloud deployments, and designed resilient systems supporting high-volume real-time data
+                        processing.</p>
+                    <div class="about-philosophy">
+                        <div class="philosophy-label">Core Philosophy</div>
+                        <blockquote class="philosophy-quote">
+                            <span>Automate everything.</span>
+                            <span>Measure everything.</span>
+                            <span>Scale everything.</span>
+                        </blockquote>
                     </div>
+                </div>
+            </div>
+            <div class="about-counters reveal-up">
+                <div class="counter-card">
+                    <div class="counter-value"><span class="counter" data-target="6">0</span><span
+                            class="counter-suffix">.5+</span></div>
+                    <div class="counter-label">Years of Experience</div>
+                </div>
+                <div class="counter-card">
+                    <div class="counter-value"><span class="counter" data-target="3">0</span></div>
+                    <div class="counter-label">Cloud Platforms Deployed</div>
+                </div>
+                <div class="counter-card">
+                    <div class="counter-value"><span class="counter" data-target="20">0</span><span
+                            class="counter-suffix">+</span></div>
+                    <div class="counter-label">CI/CD Pipelines Automated</div>
+                </div>
+                <div class="counter-card">
+                    <div class="counter-value"><span class="counter" data-target="10">0</span><span
+                            class="counter-suffix">+</span></div>
+                    <div class="counter-label">Enterprise Clients Supported</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="job">
-                    <h4>DevOps Engineer</h4>
-                    <h5>Modak Analytics | Hyderabad (04/2020–02/2022)</h5>
-                    <ul>
-                        <li>Automated infrastructure provisioning using Terraform and integrated CI/CD pipelines via GitHub Actions and Azure DevOps, reducing deployment errors by 70% and cutting release times by 50%.</li>
-                        <li>Designed cloud cost governance frameworks, including automated billing dashboards, tagging enforcement, and budget alerting, leading to a 25-35% reduction in monthly cloud spend.</li>
-                        <li>Developed real-time observability architecture using Grafana, Prometheus, ELK Stack, Splunk, and Google Stackdriver, enabling SRE best practices and reducing MTTR by 40%.</li>
-                        <li>Delivered marketplace-ready SaaS integrations on AWS Marketplace, Azure Marketplace, and Google Cloud Marketplace, supporting automated licensing, metering, and billing.</li>
-                        <li>Automated deployment of IBM StreamSets and Confluent Kafka pipelines across Google Cloud and Azure, increasing deployment consistency and reducing failure rates by 60%.</li>
-                        <li>Built hybrid cloud deployment frameworks using Terraform, Azure DevOps, and Ansible, enabling scalable rollout across 20+ tenant environments.</li>
-                        <li>Deployed containerized microservices on Kubernetes clusters, doubling service availability and supporting multi-region failover with zero downtime deployments.</li>
-                        <li>Enabled full-stack performance observability through Splunk and Dynatrace, achieving average bottleneck resolution time under 2 hours and improving uptime.</li>
-                    </ul>
+    <!-- ===================== TECH STACK ECOSYSTEM ===================== -->
+    <section class="section techstack" id="techstack">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Tech <span class="gradient-text">Ecosystem</span></h2>
+            </div>
+            <div class="ecosystem-wrapper reveal-up">
+                <canvas class="ecosystem-canvas" id="ecosystemCanvas"></canvas>
+                <div class="ecosystem-tooltip" id="ecosystemTooltip">
+                    <div class="tooltip-name"></div>
+                    <div class="tooltip-exp"></div>
+                    <div class="tooltip-desc"></div>
+                    <div class="tooltip-projects"></div>
+                </div>
+            </div>
+            <!-- Fallback / mobile-friendly grid -->
+            <div class="tech-grid-mobile">
+                <div class="tech-category-m reveal-up">
+                    <h3><span class="cat-icon">☁️</span> Cloud Platforms</h3>
+                    <div class="tech-tags"><span>🔶 AWS</span><span>🔷 Azure</span><span>🟢 GCP</span></div>
+                </div>
+                <div class="tech-category-m reveal-up">
+                    <h3><span class="cat-icon">🏗️</span> Infrastructure & IaC</h3>
+                    <div class="tech-tags">
+                        <span>🟪 Terraform</span><span>☸️ Kubernetes</span><span>🐳 Docker</span><span>📦 Vagrant</span>
+                    </div>
+                </div>
+                <div class="tech-category-m reveal-up">
+                    <h3><span class="cat-icon">📡</span> Data & Messaging</h3>
+                    <div class="tech-tags">
+                        <span>📡 Kafka</span><span>🔀 Confluent</span><span>🐇 RabbitMQ</span><span>🔄
+                            StreamSets</span><span>⚡ Spark</span>
+                    </div>
+                </div>
+                <div class="tech-category-m reveal-up">
+                    <h3><span class="cat-icon">📊</span> Observability</h3>
+                    <div class="tech-tags">
+                        <span>🔴 Prometheus</span><span>📈 Grafana</span><span>📊 Telegraf</span><span>🔍 ELK
+                            Stack</span><span>🟣 Dynatrace</span><span>🔮 Splunk</span><span>📡 Stackdriver</span>
+                    </div>
+                </div>
+                <div class="tech-category-m reveal-up">
+                    <h3><span class="cat-icon">💻</span> Languages</h3>
+                    <div class="tech-tags"><span>☕ Java</span><span>🐍 Python</span><span>🖥️ Bash</span><span>🎯
+                            Dart</span></div>
+                </div>
+                <div class="tech-category-m reveal-up">
+                    <h3><span class="cat-icon">🧩</span> Frameworks</h3>
+                    <div class="tech-tags"><span>🍃 Spring</span><span>🌶️ Flask</span><span>🦋 Flutter</span></div>
+                </div>
+                <div class="tech-category-m reveal-up">
+                    <h3><span class="cat-icon">🔧</span> CI/CD & Config</h3>
+                    <div class="tech-tags"><span>🐙 GitHub Actions</span><span>🔷 Azure DevOps</span><span>⚙️
+                            Ansible</span><span>🤖 Puppet</span><span>🧑‍🍳 Chef</span><span>🧂 Salt</span></div>
+                </div>
+                <div class="tech-category-m reveal-up">
+                    <h3><span class="cat-icon">🗄️</span> Databases</h3>
+                    <div class="tech-tags">
+                        <span>🐘 PostgreSQL</span><span>🍃 MongoDB</span><span>🐬 MySQL</span><span>📊
+                            InfluxDB</span><span>🏛️ Oracle DB</span>
+                    </div>
+                </div>
+                <div class="tech-category-m reveal-up">
+                    <h3><span class="cat-icon">🌐</span> Service Mesh & Proxy</h3>
+                    <div class="tech-tags"><span>🟩 Nginx</span><span>🔀 Traefik</span><span>🕸️ Istio</span></div>
+                </div>
+                <div class="tech-category-m reveal-up">
+                    <h3><span class="cat-icon">📦</span> Build & Storage</h3>
+                    <div class="tech-tags"><span>🏗️ Maven</span><span>🔨 SBT</span><span>📦 Pip</span><span>☁️
+                            S3</span><span>☁️ GCS</span><span>☁️ ADLS</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CAREER TIMELINE ===================== -->
+    <section class="section timeline-section" id="timeline">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Career <span class="gradient-text">Journey</span></h2>
+            </div>
+            <div class="h-timeline reveal-up" id="hTimeline">
+                <div class="h-timeline-track">
+                    <div class="h-timeline-line"></div>
+                    <!-- Card 1 -->
+                    <div class="h-timeline-card" data-year="2024">
+                        <div class="h-card-dot"></div>
+                        <div class="h-card-content">
+                            <span class="h-card-date">Sep 2024 — Present</span>
+                            <h3 class="h-card-role">Lead Product Engineer</h3>
+                            <p class="h-card-company">Modak Analytics · Hyderabad</p>
+                            <div class="h-card-details">
+                                <p>Architecting multi-tenant analytics platform. Automated SaaS deployments across AWS,
+                                    Azure, and GCP.</p>
+                                <div class="h-card-metrics">
+                                    <div class="metric"><span class="metric-val">6+</span> Teams Led</div>
+                                    <div class="metric"><span class="metric-val">40%</span> Faster Deploys</div>
+                                    <div class="metric"><span class="metric-val">50%</span> Cost Reduction</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="h-timeline-card" data-year="2022">
+                        <div class="h-card-dot"></div>
+                        <div class="h-card-content">
+                            <span class="h-card-date">Mar 2022 — Aug 2024</span>
+                            <h3 class="h-card-role">Senior DevOps Engineer</h3>
+                            <p class="h-card-company">Modak Analytics · Hyderabad</p>
+                            <div class="h-card-details">
+                                <p>Built cloud landing zones on GCP & Azure. Reduced deployment failures by 70%.</p>
+                                <div class="h-card-metrics">
+                                    <div class="metric"><span class="metric-val">70%</span> Fewer Errors</div>
+                                    <div class="metric"><span class="metric-val">35%</span> Cost Saved</div>
+                                    <div class="metric"><span class="metric-val">40%</span> MTTR ↓</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="h-timeline-card" data-year="2020">
+                        <div class="h-card-dot"></div>
+                        <div class="h-card-content">
+                            <span class="h-card-date">Apr 2020 — Feb 2022</span>
+                            <h3 class="h-card-role">DevOps Engineer</h3>
+                            <p class="h-card-company">Modak Analytics · Hyderabad</p>
+                            <div class="h-card-details">
+                                <p>Automated Kafka & StreamSets deployments. Built Kubernetes microservices
+                                    infrastructure.</p>
+                                <div class="h-card-metrics">
+                                    <div class="metric"><span class="metric-val">60%</span> Less Failures</div>
+                                    <div class="metric"><span class="metric-val">20+</span> Tenants</div>
+                                    <div class="metric"><span class="metric-val">0</span> Downtime</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="h-timeline-card" data-year="2019">
+                        <div class="h-card-dot"></div>
+                        <div class="h-card-content">
+                            <span class="h-card-date">Sep 2019 — Mar 2020</span>
+                            <h3 class="h-card-role">Data Engineer</h3>
+                            <p class="h-card-company">Modak Analytics · Hyderabad</p>
+                            <div class="h-card-details">
+                                <p>Built ETL pipelines handling 1TB+ data daily. Multi-cloud PaaS deployments.</p>
+                                <div class="h-card-metrics">
+                                    <div class="metric"><span class="metric-val">1TB+</span> Daily Data</div>
+                                    <div class="metric"><span class="metric-val">60%</span> Faster Provisioning</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ACHIEVEMENTS ===================== -->
+    <section class="section achievements" id="achievements">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Major <span class="gradient-text">Achievements</span></h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card reveal-up">
+                    <div class="ach-icon">⚡</div>
+                    <div class="ach-metric">40%</div>
+                    <h3>CI/CD Pipeline Automation</h3>
+                    <p>Automated CI/CD pipelines reducing deployment time by 40% through real-time observability and
+                        integrated tooling.</p>
+                </div>
+                <div class="achievement-card reveal-up">
+                    <div class="ach-icon">💰</div>
+                    <div class="ach-metric">50%</div>
+                    <h3>Infrastructure Cost Reduction</h3>
+                    <p>Provisioned auto-scaling Kubernetes-based Spark clusters, cutting infrastructure costs by 50%.
+                    </p>
+                </div>
+                <div class="achievement-card reveal-up">
+                    <div class="ach-icon">📊</div>
+                    <div class="ach-metric">40%</div>
+                    <h3>MTTR Reduction</h3>
+                    <p>Designed observability architecture using Grafana, Prometheus, and ELK Stack, reducing mean time
+                        to recovery by 40%.</p>
+                </div>
+                <div class="achievement-card reveal-up">
+                    <div class="ach-icon">🌐</div>
+                    <div class="ach-metric">3</div>
+                    <h3>Marketplace Integrations</h3>
+                    <p>Enabled SaaS integrations on AWS, Azure, and GCP marketplaces with automated licensing and
+                        billing.</p>
+                </div>
+                <div class="achievement-card reveal-up">
+                    <div class="ach-icon">🚀</div>
+                    <div class="ach-metric">70%</div>
+                    <h3>Deployment Error Reduction</h3>
+                    <p>Automated infrastructure provisioning using Terraform and CI/CD, reducing deployment errors by
+                        70%.</p>
+                </div>
+                <div class="achievement-card reveal-up">
+                    <div class="ach-icon">🔧</div>
+                    <div class="ach-metric">75%</div>
+                    <h3>Setup Time Reduction</h3>
+                    <p>Provisioned auto-scaling clusters using Kubernetes, Docker, and Terraform, reducing environment
+                        setup by 75%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ARCHITECTURE PLAYGROUND ===================== -->
+    <section class="section architecture" id="architecture">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Architecture <span class="gradient-text">Playground</span></h2>
+            </div>
+            <p class="arch-subtitle reveal-up">A visual simulation of the systems I build — watch data flow through the
+                pipeline in real time.</p>
+            <div class="mega-arch-wrapper reveal-up">
+
+                <!-- Pipeline 1: Application Delivery -->
+                <div class="mega-pipeline">
+                    <div class="pipe-label">I. Application Delivery</div>
+                    <div class="pipe-flow">
+                        <div class="arch-flow-node">
+                            <div class="icon-group"><img src="https://cdn.simpleicons.org/git/f59e0b" alt="Git"></div>
+                            <span>Source</span>
+                        </div>
+                        <div class="arch-flow-connector">
+                            <div class="arch-packet" style="--delay:0s"></div>
+                            <div class="arch-packet" style="--delay:1s"></div>
+                        </div>
+                        <div class="arch-flow-node">
+                            <div class="icon-group"><img src="https://cdn.simpleicons.org/githubactions/1f2937"
+                                    alt="Actions"><img src="https://cdn.simpleicons.org/azuredevops/3B82F6"
+                                    alt="Azure DevOps"></div><span>CI/CD</span>
+                        </div>
+                        <div class="arch-flow-connector">
+                            <div class="arch-packet" style="--delay:0.5s"></div>
+                            <div class="arch-packet" style="--delay:1.5s"></div>
+                        </div>
+                        <div class="arch-flow-node">
+                            <div class="icon-group"><img src="https://cdn.simpleicons.org/docker/06b6d4"
+                                    alt="Docker"><img src="https://cdn.simpleicons.org/java/ef4444" alt="Java"></div>
+                            <span>Microservices</span>
+                        </div>
+                        <div class="arch-flow-connector">
+                            <div class="arch-packet" style="--delay:0s"></div>
+                            <div class="arch-packet" style="--delay:1s"></div>
+                        </div>
+                        <div class="arch-flow-node">
+                            <div class="icon-group"><img src="https://cdn.simpleicons.org/kubernetes/3B82F6"
+                                    alt="K8s"><img src="https://cdn.simpleicons.org/nginx/10b981" alt="Nginx"></div>
+                            <span>K8s Cluster</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="job">
-                    <h4>Data Engineer</h4>
-                    <h5>Modak Analytics | Hyderabad (09/2019–03/2020)</h5>
-                    <ul>
-                        <li>Developed a custom Java-based ETL platform using StreamSets and PostgreSQL, designed to handle 1TB+ of daily data across multi-cloud environments.</li>
-                        <li>Engineered flexible pipeline execution logic supporting diverse data sources and sinks including Kafka, GCS, Amazon S3, Azure Data Lake Storage (ADLS), Oracle, and MongoDB, improving reliability and reducing integration effort.</li>
-                        <li>Automated end-to-end PaaS deployment lifecycle across AWS, Azure, and GCP, improving provisioning speed by 60% and eliminating manual configuration.</li>
-                    </ul>
+                <!-- Pipeline 2: Infrastructure Provisioning -->
+                <div class="mega-pipeline">
+                    <div class="pipe-label">II. Infrastructure Prov.</div>
+                    <div class="pipe-flow">
+                        <div class="arch-flow-node">
+                            <div class="icon-group"><img src="https://cdn.simpleicons.org/terraform/8B5CF6"
+                                    alt="Terraform"></div><span>Terraform IaC</span>
+                        </div>
+                        <div class="arch-flow-connector sync">
+                            <div class="arch-packet" style="--delay:0s"></div>
+                            <div class="arch-packet" style="--delay:1.2s"></div>
+                        </div>
+                        <div class="arch-flow-node">
+                            <div class="icon-group"><img src="https://cdn.simpleicons.org/ansible/ef4444"
+                                    alt="Ansible"><img src="https://cdn.simpleicons.org/chef/f97316" alt="Chef"></div>
+                            <span>Config Mgmt</span>
+                        </div>
+                        <div class="arch-flow-connector sync">
+                            <div class="arch-packet" style="--delay:0.6s"></div>
+                            <div class="arch-packet" style="--delay:1.8s"></div>
+                        </div>
+                        <div class="arch-flow-node">
+                            <div class="icon-group"><img src="https://cdn.simpleicons.org/amazonwebservices/f59e0b"
+                                    alt="AWS"><img src="https://cdn.simpleicons.org/microsoftazure/3B82F6"
+                                    alt="Azure"><img src="https://cdn.simpleicons.org/googlecloud/10b981" alt="GCP">
+                            </div><span>Multi-Cloud</span>
+                        </div>
+                    </div>
                 </div>
-            </section>
 
-            <section class="section">
-                <h3>Education</h3>
-                <div class="education-item">
-                    <h4>Osmania University | Hyderabad</h4>
-                    <p>Hyderabad in Electronics And Communication (Graduated: 06/2019)</p>
+                <!-- Pipeline 3: Data & Streaming -->
+                <div class="mega-pipeline">
+                    <div class="pipe-label">III. Data Pipeline</div>
+                    <div class="pipe-flow">
+                        <div class="arch-flow-node">
+                            <div class="icon-group"><img src="https://cdn.simpleicons.org/apachekafka/ec4899"
+                                    alt="Kafka"><img src="https://cdn.simpleicons.org/rabbitmq/f97316" alt="RabbitMQ">
+                            </div><span>Event Bus</span>
+                        </div>
+                        <div class="arch-flow-connector">
+                            <div class="arch-packet" style="--delay:0s"></div>
+                            <div class="arch-packet" style="--delay:0.8s"></div>
+                        </div>
+                        <div class="arch-flow-node">
+                            <div class="icon-group"><img src="https://cdn.simpleicons.org/apachespark/f59e0b"
+                                    alt="Spark"><img src="https://cdn.simpleicons.org/apache/14b8a6" alt="StreamSets">
+                            </div><span>ETL Processing</span>
+                        </div>
+                        <div class="arch-flow-connector">
+                            <div class="arch-packet" style="--delay:0.4s"></div>
+                            <div class="arch-packet" style="--delay:1.2s"></div>
+                        </div>
+                        <div class="arch-flow-node">
+                            <div class="icon-group"><img src="https://cdn.simpleicons.org/postgresql/3B82F6"
+                                    alt="PostgreSQL"><img src="https://cdn.simpleicons.org/mongodb/10b981"
+                                    alt="MongoDB"><img src="https://cdn.simpleicons.org/oracle/ef4444" alt="Oracle">
+                            </div><span>Databases</span>
+                        </div>
+                        <div class="arch-flow-connector">
+                            <div class="arch-packet" style="--delay:0.8s"></div>
+                            <div class="arch-packet" style="--delay:1.6s"></div>
+                        </div>
+                        <div class="arch-flow-node">
+                            <div class="icon-group"><img src="https://cdn.simpleicons.org/amazons3/ef4444" alt="S3"><img
+                                    src="https://cdn.simpleicons.org/microsoftazure/3B82F6" alt="ADLS"></div><span>Data
+                                Lake</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="education-item">
-                    <h4>Sri Chaitanya Junior College | Hyderabad</h4>
-                    <p>Intermediate in Hyderabad (Graduated: 05/2015)</p>
-                </div>
-                <div class="education-item">
-                    <h4>The Nalgonda Public School (C.B.S.E) | Nalgonda</h4>
-                    <p>Class X (Graduated: 06/2013) - GPA: 9.2</p>
-                </div>
-            </section>
 
-            <section class="section">
-                <h3>Interests</h3>
-                <ul class="interests-list">
-                    <li>National Chess & Carom Player</li>
-                    <li>Violet Belt in Karate</li>
-                    <li>Gymnast</li>
-                    <li>UCMAS Graduate</li>
-                    <li>Singer & Beginner Flutist</li>
-                    <li>Anime Fan (Naruto, One Piece)</li>
-                    <li>Marvel & DC Enthusiast</li>
-                    <li>Passionate Teacher & Mentor</li>
-                </ul>
-            </section>
-        </main>
-    </div>
+                <!-- Pipeline 4: Observability -->
+                <div class="mega-pipeline">
+                    <div class="pipe-label">IV. Observability</div>
+                    <div class="pipe-flow">
+                        <div class="arch-flow-node">
+                            <div class="icon-group"><img src="https://cdn.simpleicons.org/prometheus/ef4444"
+                                    alt="Prometheus"><img src="https://cdn.simpleicons.org/influxdb/3B82F6"
+                                    alt="Telegraf"></div><span>Metrics</span>
+                        </div>
+                        <div class="arch-flow-connector sync">
+                            <div class="arch-packet" style="--delay:0s"></div>
+                            <div class="arch-packet" style="--delay:1s"></div>
+                        </div>
+                        <div class="arch-flow-node">
+                            <div class="icon-group"><img src="https://cdn.simpleicons.org/elasticstack/10b981"
+                                    alt="ELK"><img src="https://cdn.simpleicons.org/splunk/ec4899" alt="Splunk"></div>
+                            <span>Log Aggregation</span>
+                        </div>
+                        <div class="arch-flow-connector sync">
+                            <div class="arch-packet" style="--delay:0.5s"></div>
+                            <div class="arch-packet" style="--delay:1.5s"></div>
+                        </div>
+                        <div class="arch-flow-node">
+                            <div class="icon-group"><img src="https://cdn.simpleicons.org/grafana/f59e0b"
+                                    alt="Grafana"><img src="https://cdn.simpleicons.org/dynatrace/6366f1"
+                                    alt="Dynatrace"></div><span>Dashboards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-number">06</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal-up" id="proj1">
+                    <div class="proj-header">
+                        <div class="proj-icon">☁️</div>
+                        <h3>Cloud Automation Framework</h3>
+                    </div>
+                    <p>Automated multi-cloud infrastructure provisioning using Terraform modules and CI/CD pipelines
+                        across AWS, Azure, and GCP.</p>
+                    <div class="proj-arch-flow">
+                        <div class="arch-flow-node"><img src="https://cdn.simpleicons.org/terraform/8B5CF6"
+                                alt="Terraform"><span>Terraform</span></div>
+                        <div class="arch-flow-connector">
+                            <div class="arch-packet" style="--delay:0s"></div>
+                            <div class="arch-packet" style="--delay:1s"></div>
+                        </div>
+                        <div class="arch-flow-node"><img src="https://cdn.simpleicons.org/githubactions/1f2937"
+                                alt="Actions"><span>Actions</span></div>
+                        <div class="arch-flow-connector">
+                            <div class="arch-packet" style="--delay:0.5s"></div>
+                            <div class="arch-packet" style="--delay:1.5s"></div>
+                        </div>
+                        <div class="arch-flow-node"><img src="https://cdn.simpleicons.org/amazonwebservices/f59e0b"
+                                alt="AWS"><span>AWS/Azure/GCP</span></div>
+                    </div>
+                    <div class="proj-details">
+                        <div class="proj-tech"><span>Terraform</span><span>GitHub Actions</span><span>Azure
+                                DevOps</span><span>GCP</span></div>
+                        <div class="proj-metrics">
+                            <div><strong>75%</strong> faster setup</div>
+                            <div><strong>20+</strong> environments</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal-up" id="proj2">
+                    <div class="proj-header">
+                        <div class="proj-icon">📊</div>
+                        <h3>Multi-Tenant Analytics Platform</h3>
+                    </div>
+                    <p>Cloud-native analytics platform supporting real-time distributed processing for 10+ enterprise
+                        clients with sub-second insights.</p>
+                    <div class="proj-arch-flow">
+                        <div class="arch-flow-node"><img src="https://cdn.simpleicons.org/apachekafka/ec4899"
+                                alt="Kafka"><span>Kafka</span></div>
+                        <div class="arch-flow-connector">
+                            <div class="arch-packet" style="--delay:0s"></div>
+                            <div class="arch-packet" style="--delay:1s"></div>
+                        </div>
+                        <div class="arch-flow-node"><img src="https://cdn.simpleicons.org/apachespark/f59e0b"
+                                alt="Spark"><span>Spark</span></div>
+                        <div class="arch-flow-connector">
+                            <div class="arch-packet" style="--delay:0.5s"></div>
+                            <div class="arch-packet" style="--delay:1.5s"></div>
+                        </div>
+                        <div class="arch-flow-node"><img src="https://cdn.simpleicons.org/kubernetes/3B82F6"
+                                alt="K8s"><span>K8s</span></div>
+                    </div>
+                    <div class="proj-details">
+                        <div class="proj-tech">
+                            <span>Kubernetes</span><span>Spark</span><span>Kafka</span><span>Docker</span>
+                        </div>
+                        <div class="proj-metrics">
+                            <div><strong>10+</strong> clients</div>
+                            <div><strong>1TB+</strong> daily data</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal-up" id="proj3">
+                    <div class="proj-header">
+                        <div class="proj-icon">🔄</div>
+                        <h3>CI/CD Pipeline Automation</h3>
+                    </div>
+                    <p>End-to-end CI/CD automation with integrated observability, CLI tools, and REST APIs reducing
+                        deployment time by 40%.</p>
+                    <div class="proj-arch-flow">
+                        <div class="arch-flow-node"><img src="https://cdn.simpleicons.org/githubactions/1f2937"
+                                alt="Actions"><span>Actions</span></div>
+                        <div class="arch-flow-connector">
+                            <div class="arch-packet" style="--delay:0s"></div>
+                            <div class="arch-packet" style="--delay:1s"></div>
+                        </div>
+                        <div class="arch-flow-node"><img src="https://cdn.simpleicons.org/docker/06b6d4"
+                                alt="Docker"><span>Docker</span></div>
+                        <div class="arch-flow-connector">
+                            <div class="arch-packet" style="--delay:0.5s"></div>
+                            <div class="arch-packet" style="--delay:1.5s"></div>
+                        </div>
+                        <div class="arch-flow-node"><img src="https://cdn.simpleicons.org/ansible/ef4444"
+                                alt="Ansible"><span>Ansible</span></div>
+                    </div>
+                    <div class="proj-details">
+                        <div class="proj-tech"><span>GitHub
+                                Actions</span><span>Ansible</span><span>Docker</span><span>Grafana</span></div>
+                        <div class="proj-metrics">
+                            <div><strong>40%</strong> time saved</div>
+                            <div><strong>70%</strong> fewer errors</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal-up" id="proj4">
+                    <div class="proj-header">
+                        <div class="proj-icon">🏪</div>
+                        <h3>Marketplace SaaS Deployment</h3>
+                    </div>
+                    <p>Built marketplace-ready SaaS integrations on AWS, Azure, and GCP with automated licensing,
+                        metering, and billing.</p>
+                    <div class="proj-arch-flow">
+                        <div class="arch-flow-node"><img src="https://cdn.simpleicons.org/amazonwebservices/f59e0b"
+                                alt="AWS"><span>AWS</span></div>
+                        <div class="arch-flow-connector sync">
+                            <div class="arch-packet" style="--delay:0s"></div>
+                        </div>
+                        <div class="arch-flow-node"><img src="https://cdn.simpleicons.org/microsoftazure/3B82F6"
+                                alt="Azure"><span>Azure</span></div>
+                        <div class="arch-flow-connector sync">
+                            <div class="arch-packet" style="--delay:0.5s"></div>
+                        </div>
+                        <div class="arch-flow-node"><img src="https://cdn.simpleicons.org/googlecloud/10b981"
+                                alt="GCP"><span>GCP</span></div>
+                    </div>
+                    <div class="proj-details">
+                        <div class="proj-tech"><span>AWS</span><span>Azure</span><span>GCP</span><span>SaaS</span></div>
+                        <div class="proj-metrics">
+                            <div><strong>30%</strong> faster onboarding</div>
+                            <div><strong>3</strong> marketplaces</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal-up" id="proj5">
+                    <div class="proj-header">
+                        <div class="proj-icon">🔍</div>
+                        <h3>Observability Platform</h3>
+                    </div>
+                    <p>Real-time monitoring architecture using Grafana, Prometheus, ELK Stack, Splunk enabling SRE best
+                        practices.</p>
+                    <div class="proj-arch-flow">
+                        <div class="arch-flow-node"><img src="https://cdn.simpleicons.org/prometheus/ef4444"
+                                alt="Prometheus"><span>Prometheus</span></div>
+                        <div class="arch-flow-connector">
+                            <div class="arch-packet" style="--delay:0s"></div>
+                            <div class="arch-packet" style="--delay:1s"></div>
+                        </div>
+                        <div class="arch-flow-node"><img src="https://cdn.simpleicons.org/elasticstack/10b981"
+                                alt="ELK"><span>ELK Stack</span></div>
+                        <div class="arch-flow-connector">
+                            <div class="arch-packet" style="--delay:0.5s"></div>
+                            <div class="arch-packet" style="--delay:1.5s"></div>
+                        </div>
+                        <div class="arch-flow-node"><img src="https://cdn.simpleicons.org/grafana/f59e0b"
+                                alt="Grafana"><span>Grafana</span></div>
+                    </div>
+                    <div class="proj-details">
+                        <div class="proj-tech">
+                            <span>Prometheus</span><span>Grafana</span><span>ELK</span><span>Splunk</span>
+                        </div>
+                        <div class="proj-metrics">
+                            <div><strong>40%</strong> MTTR reduction</div>
+                            <div><strong>&lt;2hr</strong> resolution</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal-up" id="proj6">
+                    <div class="proj-header">
+                        <div class="proj-icon">☕</div>
+                        <h3>Enterprise ETL Pipeline</h3>
+                    </div>
+                    <p>Custom Java-based ETL platform handling 1TB+ daily multi-cloud data across Oracle, MongoDB, S3
+                        and ADLS using StreamSets.</p>
+                    <div class="proj-arch-flow">
+                        <div class="arch-flow-node"><img src="https://cdn.simpleicons.org/java/ef4444"
+                                alt="Java"><span>Java</span></div>
+                        <div class="arch-flow-connector">
+                            <div class="arch-packet" style="--delay:0s"></div>
+                            <div class="arch-packet" style="--delay:1s"></div>
+                        </div>
+                        <div class="arch-flow-node"><img src="https://cdn.simpleicons.org/postgresql/3B82F6"
+                                alt="PostgreSQL"><span>PostgreSQL</span></div>
+                        <div class="arch-flow-connector">
+                            <div class="arch-packet" style="--delay:0.5s"></div>
+                            <div class="arch-packet" style="--delay:1.5s"></div>
+                        </div>
+                        <div class="arch-flow-node"><img src="https://cdn.simpleicons.org/amazons3/ef4444"
+                                alt="S3"><span>Data Lake</span></div>
+                    </div>
+                    <div class="proj-details">
+                        <div class="proj-tech">
+                            <span>Java</span><span>StreamSets</span><span>PostgreSQL</span><span>Oracle</span>
+                        </div>
+                        <div class="proj-metrics">
+                            <div><strong>1TB+</strong> processed</div>
+                            <div><strong>100%</strong> reliability</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== THOUGHT LEADERSHIP ===================== -->
+    <section class="section thoughts" id="thoughts">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-number">07</span>
+                <h2 class="section-title">Thought <span class="gradient-text">Leadership</span></h2>
+            </div>
+            <div class="thoughts-grid">
+                <article class="thought-card reveal-up">
+                    <div class="thought-category">DevOps</div>
+                    <h3>DevOps Automation: Beyond CI/CD</h3>
+                    <p>How I automated 90% of infrastructure operations using IaC, policy-as-code, and self-service
+                        platforms.</p>
+                    <span class="thought-read">Read Insights →</span>
+                </article>
+                <article class="thought-card reveal-up">
+                    <div class="thought-category">Kubernetes</div>
+                    <h3>Scaling Kubernetes Clusters for Data Workloads</h3>
+                    <p>Patterns for auto-scaling Spark on K8s while maintaining cost efficiency and zero-downtime
+                        deployments.</p>
+                    <span class="thought-read">Read Insights →</span>
+                </article>
+                <article class="thought-card reveal-up">
+                    <div class="thought-category">Cloud</div>
+                    <h3>Cost Optimization in Multi-Cloud</h3>
+                    <p>Strategies that achieved 25-35% reduction in monthly cloud spend through governance frameworks
+                        and intelligent alerting.</p>
+                    <span class="thought-read">Read Insights →</span>
+                </article>
+                <article class="thought-card reveal-up">
+                    <div class="thought-category">Observability</div>
+                    <h3>Observability for Distributed Systems</h3>
+                    <p>Building full-stack observability with Prometheus, Grafana, and ELK to achieve SRE excellence.
+                    </p>
+                    <span class="thought-read">Read Insights →</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FUN / PERSONALITY ===================== -->
+    <section class="section funside" id="funside">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-number">08</span>
+                <h2 class="section-title">Beyond <span class="gradient-text">The Terminal</span></h2>
+            </div>
+            <div class="fun-grid">
+                <div class="fun-item reveal-up" data-tilt>
+                    <div class="fun-float-icon">♟️</div>
+                    <h3>National Chess Player</h3>
+                    <p>Strategic thinking, one move at a time</p>
+                </div>
+                <div class="fun-item reveal-up" data-tilt>
+                    <div class="fun-float-icon">🥋</div>
+                    <h3>Karate · Violet Belt</h3>
+                    <p>Discipline, focus, and controlled power</p>
+                </div>
+                <div class="fun-item reveal-up" data-tilt>
+                    <div class="fun-float-icon">🎵</div>
+                    <h3>Singer & Flutist</h3>
+                    <p>Finding harmony in melodies and code</p>
+                </div>
+                <div class="fun-item reveal-up" data-tilt>
+                    <div class="fun-float-icon">⚡</div>
+                    <h3>Anime Enthusiast</h3>
+                    <p>Naruto · One Piece — stories of perseverance</p>
+                </div>
+                <div class="fun-item reveal-up" data-tilt>
+                    <div class="fun-float-icon">🦸</div>
+                    <h3>Marvel & DC Fan</h3>
+                    <p>Superheroes inspire super engineering</p>
+                </div>
+                <div class="fun-item reveal-up" data-tilt>
+                    <div class="fun-float-icon">🧑‍🏫</div>
+                    <h3>Mentor & Teacher</h3>
+                    <p>Knowledge shared is knowledge multiplied</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-number">09</span>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+            </div>
+            <div class="contact-layout">
+                <div class="contact-links reveal-left">
+                    <a href="https://www.linkedin.com/in/sadhvik-chirunomula-080064170/" target="_blank" rel="noopener"
+                        class="contact-link-card" id="linkLinkedIn">
+                        <div class="cl-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="cl-label">LinkedIn</span>
+                            <span class="cl-value">Sadhvik Chirunomula</span>
+                        </div>
+                    </a>
+                    <a href="https://sadhvikchirunomula.github.io/" target="_blank" rel="noopener"
+                        class="contact-link-card" id="linkGitHub">
+                        <div class="cl-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 00-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 004 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                <path d="M9 18c-4.51 2-5-2-7-2" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="cl-label">GitHub / Portfolio</span>
+                            <span class="cl-value">sadhvikchirunomula.github.io</span>
+                        </div>
+                    </a>
+                    <a href="https://stackoverflow.com/users/12455245/sadhvik-chirunomula" target="_blank"
+                        rel="noopener" class="contact-link-card" id="linkSO">
+                        <div class="cl-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M4 20h16M6 16h12M6.5 12.5l11.5 2M8 8.5l10.5 4.5M10.5 5l9 7" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="cl-label">Stack Overflow</span>
+                            <span class="cl-value">Sadhvik Chirunomula</span>
+                        </div>
+                    </a>
+                    <a href="mailto:sadhu1998@gmail.com" class="contact-link-card" id="linkEmail">
+                        <div class="cl-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="cl-label">Email</span>
+                            <span class="cl-value">sadhu1998@gmail.com</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="contact-terminal reveal-right">
+                    <div class="terminal-window">
+                        <div class="terminal-bar">
+                            <div class="terminal-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <span class="terminal-title">contact@sadhvik ~ terminal</span>
+                        </div>
+                        <div class="terminal-body" id="terminalBody">
+                            <div class="terminal-line">
+                                <span class="term-prompt">visitor@sadhvik:~$</span>
+                                <span class="term-text">whoami</span>
+                            </div>
+                            <div class="terminal-output">Lead Product Engineer & DevOps Architect</div>
+                            <div class="terminal-line">
+                                <span class="term-prompt">visitor@sadhvik:~$</span>
+                                <span class="term-text">cat contact.json</span>
+                            </div>
+                            <div class="terminal-output terminal-json">
+                                {<br>
+                                &nbsp;&nbsp;"email": "sadhu1998@gmail.com",<br>
+                                &nbsp;&nbsp;"phone": "+91 9160230298",<br>
+                                &nbsp;&nbsp;"location": "Hyderabad, India",<br>
+                                &nbsp;&nbsp;"status": "Available"<br>
+                                }
+                            </div>
+                            <div class="terminal-line terminal-input-line">
+                                <span class="term-prompt">visitor@sadhvik:~$</span>
+                                <input type="text" class="terminal-input" id="terminalInput"
+                                    placeholder='send-message --name "Your Name" --message "Hello!"' autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="logo-bracket">&lt;</span>SC<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p>Designed & engineered by <strong>Sadhvik Chirunomula</strong></p>
+                <p class="footer-copy">© 2025 · Built with passion, deployed with Terraform.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
